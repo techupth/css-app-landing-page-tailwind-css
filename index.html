@@ -38,7 +38,6 @@
       </div>
     </div>
 
-
     <!-- Dev 2 : Feature Section -->
     <div class="p-[120px] flex gap-5 w-screen h-auto justify-center">
       <div
@@ -129,6 +128,30 @@
     </div>
 
     <!-- Dev 3 : Contact Section -->
-    <div></div>
+    <div class="w-screen h-auto px-[120px] flex flex-col items-center">
+      <form
+        class="bg-[#FFFFFFB2] w-[1190px] h-[666px] px-30 py-20 rounded-3xl flex flex-col items-center gap-10"
+      >
+        <h2 class="text-[#1A1A2C] text-5xl font-bold">Get in Touch</h2>
+        <div class="w-[580px] flex flex-col gap-5">
+          <label for="name" class="text-base text-[#5F5F76]">Name</label>
+          <input type="text" id="name" placeholder="Johe Doe" class="h-[48px] px-3 border-2 border-[#E0E0ED] rounded-md hover:border-[#B5A9FF] focus:border-[#5E44FF]"/>
+          <label for="email" class="text-base text-[#5F5F76]">Email</label>
+          <input type="text" id="email" placeholder="johe@example.com" class="h-[48px] px-3 border-2 border-[#E0E0ED] rounded-md hover:border-[#B5A9FF] focus:border-[#5E44FF]"/>
+          <label for="description" class="text-base text-[#5F5F76]">Email</label>
+          <textarea id="description" placeholder="Your message...." class="h-[102px] px-3 border-2 border-[#E0E0ED] rounded-md hover:border-[#B5A9FF] focus:border-[#5E44FF]"></textarea>
+        </div>
+        <button class="w-[589px] py-3 bg-[#1A1A2C] text-white rounded-xl">Submit</button>
+      </form>
+      <footer class="flex flex-row justify-between w-[100%]">
+        <p>Acme productivity app ©2024 </p>
+        <div >
+          <a>FAQ</a>
+          <a>Terms</a>
+          <a>Ai Policy</a>
+          <a>Pricing</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
