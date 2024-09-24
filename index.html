@@ -14,42 +14,63 @@
     <!--Dev_Earth-->
 
     <!--Dev_Fluk-->
-    <div>
-      <div>
-        <section>
-          <h2>Get in Touch</h2>
-          <form action="#" >
-            <div>
-              <label for="name">Name</label> <br />
-              <input type="text" name="name" placeholder="Jhon Doe" />
-            </div>
-            <br />
-            <div>
-              <label for="email">Email</label> <br />
-              <input type="text" name="email" placeholder="john@example.com" />
-            </div>
-            <br />
-            <div>
-              <label for="your-message">Message</label><br />
-              <textarea
-                name="your-message"
-                id="f-input-message"
-                placeholder="Your message..."></textarea>
-            </div>
-            <br />
-          </form>
-          <button>Submit</button>
-        </section>
-        <footer>
-          <h3>Acme productivity app ©2024</h3>
-          <div>
-            <button>FAQ</button>
-            <button>Terms</button>
-            <button>Al Policy</button>
-            <button>Pricing</button>
+    <div
+      class="Container flex flex-col justify-center items-center bg-[#FFFFFFB2; pt-0 pr-[120px] pl-[120px] pb-20] w-[1439px] gap-20">
+      <section
+        class="Get-in-Touch-ection bg-[#FFFFFFB2;] w-full h-auto flex flex-col items-center">
+        <h2 class="Icon font-sans text-[44px] font-bold text-gray-900">
+          Get in Touch
+        </h2>
+        <form
+          action="#"
+          class="User-form flex flex-col items-center w-[589px] h-auto gap-5">
+          <div class="Name-input text-base font-normal w-full">
+            <label for="name" class="text-[#5F5F76]">Name</label> <br />
+            <input
+              type="text"
+              name="name"
+              placeholder="Jhon Doe"
+              class="w-full rounded-md p-3 border border-solid border-[#E0E0ED]" />
           </div>
-        </footer>
-      </div>
+          <br />
+          <div class="Emain-input text-base font-normal w-full">
+            <label for="email" class="text-[#5F5F76]">Email</label> <br />
+            <input
+              type="text"
+              name="email"
+              placeholder="john@example.com"
+              class="w-full rounded-md p-3 border border-solid border-[#E0E0ED]" />
+          </div>
+          <br />
+          <div
+            class="Message-input text-base font-normal text-[#5F5F76] w-full">
+            <label for="your-message" class="text-[#5F5F76]">Message</label
+            ><br />
+            <textarea
+              name="your-message"
+              id="f-input-message"
+              placeholder="Your message..."
+              class="w-full rounded-md p-3 h-[102px] border border-solid border-[#E0E0ED]"></textarea>
+          </div>
+          <br />
+        </form>
+        <button
+          class="Submit-button flex flex-col items-center justify-center w-[589px] h-14 bg-[#1A1A2C] pt-4 pb-4 pr-9 pl-9 rounded-2xl gap-[6px] text-white text-base font-semibold">
+          Submit
+        </button>
+      </section>
+      <footer class="Footer-section flex flex-row justify-between w-full">
+        <h3 class="text-base font-medium text-[#5F5F76]">
+          Acme productivity app ©2024
+        </h3>
+        <div
+          class="Button-collection flex flex-row justify-between gap-[37px] text-base font-semibold text-[#1A1A2C]">
+          <button class="gap[6px] rounded-[5px]">FAQ</button>
+          <button class="gap[6px] rounded-[5px]">Terms</button>
+          <button class="gap[6px] rounded-[5px]">Al Policy</button>
+          <button class="gap[6px] rounded-[5px]">Pricing</button>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
