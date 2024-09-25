@@ -39,9 +39,9 @@
     </div>
 
     <!-- Dev 2 : Feature Section -->
-    <div class="p-[120px] flex gap-5 w-screen h-auto justify-center">
+    <div class="p-[16px] flex flex-col gap-5 w-screen h-auto justify-center items-center sm:flex-row sm:p-[120px]">
       <div
-        class="bg-[#D7E5F6] w-[387px] h-[272px] p-[28px] rounded-3xl flex flex-col gap-5"
+        class="bg-[#D7E5F6] w-max-[343px] h-min-[272px] p-[28px] rounded-3xl flex flex-col gap-5 sm:w-[387px]"
       >
         <p
           class="w-[60px] h-[60px] bg-[#FFFFFF99] rounded-2xl flex justify-center items-center"
@@ -72,7 +72,7 @@
         </p>
       </div>
       <div
-        class="bg-[#D8E0FC] w-[387px] h-[272px] p-[28px] rounded-3xl flex flex-col gap-5"
+        class="bg-[#D8E0FC] w-max-[343px] h-min-[272px] p-[28px] rounded-3xl flex flex-col gap-5 sm:w-[387px]" 
       >
         <p
           class="w-[60px] h-[60px] bg-[#FFFFFF99] rounded-2xl flex justify-center items-center"
@@ -99,7 +99,7 @@
         </p>
       </div>
       <div
-        class="bg-[#E8DCF6] w-[387px] h-[272px] p-[28px] rounded-3xl flex flex-col gap-5"
+        class="bg-[#E8DCF6] w-max-[343px] h-min-[272px] p-[28px] rounded-3xl flex flex-col gap-5 sm:w-[387px]"
       >
         <p
           class="w-[60px] h-[60px] bg-[#FFFFFF99] rounded-2xl flex justify-center items-center"
@@ -130,10 +130,10 @@
     <!-- Dev 3 : Contact Section -->
     <div class="w-screen h-auto px-[120px] flex flex-col items-center gap-11">
       <form
-        class="bg-[#FFFFFFB2] w-[1190px] h-[666px] px-30 py-20 rounded-3xl flex flex-col items-center gap-10"
+        class="bg-[#FFFFFFB2] w-[343px] h-[666px] px-30 py-20 rounded-3xl flex flex-col items-center gap-10 sm:w-[1190px]"
       >
         <h2 class="text-[#1A1A2C] text-5xl font-bold">Get in Touch</h2>
-        <div class="w-[580px] flex flex-col gap-5">
+        <div class="w-[303px] flex flex-col gap-5 sm:w-[580px]">
           <label for="name" class="text-base text-[#5F5F76]">Name</label>
           <input
             type="text"
@@ -156,14 +156,14 @@
             placeholder="Your message...."
             class="h-[102px] px-3 py-2 border-2 border-[#E0E0ED] rounded-md hover:border-[#B5A9FF] focus:outline-none focus:border-[#5E44FF]"
           ></textarea>
-        </div>
-        <button class="w-[589px] py-4 px-9 bg-[#1A1A2C] text-white rounded-xl hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring focus:ring-[#5F5F76]">
+        </div>  
+        <button class="w-[303px] py-4 px-9 bg-[#1A1A2C] text-white rounded-xl hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring focus:ring-[#5F5F76] sm:w-[589px]">
           Submit
         </button>
       </form>
-      <footer class="flex flex-row justify-between w-[100%]">
+      <footer class="flex flex-col justify-between w-auto sm:w-[100%] items-center sm:flex-row">
         <p>Acme productivity app ©2024</p>
-        <ul class="flex flex-row justify-around w-[313px]">
+        <ul class="flex flex-row justify-around w-[313px] ">
           <li>
             <a href="/" class="hover:underline hover:text-[#5E44FF]">FAQ</a>
           </li>
