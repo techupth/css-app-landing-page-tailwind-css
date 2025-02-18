@@ -6,13 +6,13 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="font-[Poppins] bg-gray-50">
+  <body class="font-[Poppins] bg-[#F6F6FB]">
     <!-- Nav Bar + Hero Section Here -->
     <!-- Header -->
-    <header class="w-full flex flex-col items-center h-[600px]">
+    <header class="w-full flex flex-col items-center h-[600px] py-6">
       <!-- Navbar -->
       <div
-        class="w-[95%] bg-white flex justify-center p-4 rounded-full shadow-md"
+        class="w-[95%] h-[80px] bg-white flex justify-center p-4 rounded-full shadow-md py-[12px] px-[80px]"
       >
         <div class="w-full flex justify-between items-center">
           <div class="relative">
@@ -23,24 +23,24 @@
             </h1>
           </div>
           <nav>
-            <ul class="flex gap-6">
+            <ul class="flex gap-6 text-[16px]">
               <li
-                class="text-lg font-medium cursor-pointer hover:text-indigo-600 hover:underline"
+                class="font-medium cursor-pointer hover:text-indigo-600 hover:underline"
               >
                 Home
               </li>
               <li
-                class="text-lg font-medium cursor-pointer hover:text-indigo-600 hover:underline"
+                class="font-medium cursor-pointer hover:text-indigo-600 hover:underline"
               >
                 Features
               </li>
               <li
-                class="text-lg font-medium cursor-pointer hover:text-indigo-600 hover:underline"
+                class="font-medium cursor-pointer hover:text-indigo-600 hover:underline"
               >
                 Pricing
               </li>
               <li
-                class="text-lg font-medium cursor-pointer hover:text-indigo-600 hover:underline"
+                class="font-medium cursor-pointer hover:text-indigo-600 hover:underline"
               >
                 Contact
               </li>
@@ -50,7 +50,11 @@
       </div>
       <!-- Hero Section -->
       <section class="text-center mt-24">
-        <p class="text-indigo-600">🌈️ Acme Productivity App</p>
+        <div
+          class="bg-[#563AFF1A] text-white rounded-full px-4 py-2 inline-block"
+        >
+          <p class="text-indigo-600">🌈️ Acme Productivity App</p>
+        </div>
         <div class="mt-6">
           <h1 class="text-[96px] font-bold text-gray-900">
             Boost Your <span class="text-indigo-600">Product</span>ivity
@@ -72,13 +76,13 @@
     <!-- Contact Section -->
     <section
       id="contact"
-      class="w-full min-h-screen flex items-center justify-center bg-slate-50"
+      class="w-full min-h-screen flex items-center justify-center"
     >
       <div
-        class="contact-container w-full max-w-7xl mx-auto py-20 px-30 bg-white"
+        class="contact-container w-full max-w-7xl mx-auto py-20 px-30 bg-white rounded-3xl"
       >
         <h2
-          class="text-4xl md:text-[44px] font-bold leading-[48px] text-center mb-12"
+          class="text-5xl font-bold leading-[48px] text-center mb-12 text-[#1A1A2C]"
         >
           Get in Touch
         </h2>
@@ -113,7 +117,7 @@
 
           <button
             type="submit"
-            class="w-full py-3 px-6 text-white bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors"
+            class="w-[589px] py-4 px-9 text-white bg-[#1A1A2C] rounded-2xl hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-2 focus:ring-[#5F5F76] transition-colors"
           >
             Submit
           </button>
@@ -121,16 +125,32 @@
       </div>
     </section>
 
-    <footer class="w-full bg-slate-50">
+    <footer class="w-full">
       <div
         class="footer container w-full max-w-7xl mx-auto py-4 flex justify-between items-center text-sm text-gray-600"
       >
         <div>Acme productivity app ©2024</div>
         <div class="space-x-6">
-          <a href="#" class="hover:text-gray-900">FAQ</a>
-          <a href="#" class="hover:text-gray-900">Terms</a>
-          <a href="#" class="hover:text-gray-900">AI Policy</a>
-          <a href="#" class="hover:text-gray-900">Pricing</a>
+          <a
+            href="#"
+            class="hover:text-[#5E44FF] hover:underline transition-colors"
+            >FAQ</a
+          >
+          <a
+            href="#"
+            class="hover:text-[#5E44FF] hover:underline transition-colors"
+            >Terms</a
+          >
+          <a
+            href="#"
+            class="hover:text-[#5E44FF] hover:underline transition-colors"
+            >AI Policy</a
+          >
+          <a
+            href="#"
+            class="hover:text-[#5E44FF] hover:underline transition-colors"
+            >Pricing</a
+          >
         </div>
       </div>
     </footer>
