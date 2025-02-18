@@ -2,16 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Nav Bar + Hero Section Here -->
-
-    <!-- Feature Section -->
-
-    <!-- Contact Section -->
+  <body class="font-[Poppins] bg-gray-50">
+    <!-- Header -->
+    <header class="w-full flex flex-col items-center h-[600px]">
+      <!-- Navbar -->
+      <div class="w-[95%] bg-white flex justify-center p-4 rounded-full shadow-md">
+        <div class="w-full flex justify-between items-center">
+          <div class="relative">
+            <h1 class="text-3xl font-bold text-gray-900">Acme<span class="text-indigo-600 text-4xl absolute -top 8">.</span></h1>
+          </div>
+          <nav>
+            <ul class="flex gap-6">
+              <li class="text-lg font-medium cursor-pointer hover:text-indigo-600 hover:underline">Home</li>
+              <li class="text-lg font-medium cursor-pointer hover:text-indigo-600 hover:underline">Features</li>
+              <li class="text-lg font-medium cursor-pointer hover:text-indigo-600 hover:underline">Pricing</li>
+              <li class="text-lg font-medium cursor-pointer hover:text-indigo-600 hover:underline">Contact</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- Hero Section -->
+      <section class="text-center mt-24">
+        <p class="text-indigo-600">🌈️ Acme Productivity App</p>
+        <div class="mt-6">
+          <h1 class="text-[96px] font-bold text-gray-900">Boost Your <span class="text-indigo-600">Product</span>ivity</h1>
+          <p class="text-xl font-semibold text-gray-900 mt-6">Streamline your workflow with our all-in-one productivity app.</p>
+        </div>
+        <button class="bg-gray-900 text-white px-6 py-3 rounded-lg text-lg mt-8 hover:bg-indigo-600 transition">Start Free Trial</button>
+      </section>
+    </header>
   </body>
 </html>
