@@ -13,7 +13,7 @@
       }
     </style>
   </head>
-  <body class="flex flex-col items-center">
+  <body class="flex flex-col ">
     <header class="flex flex-col h-screen w-screen">
       <nav class="sticky top-0 z-10 bg-white shadow-sm p-4 pl-10 pr-20 rounded-full mx-[30px] mt-[24px]">
         <div class="w-full flex justify-between items-center px-4">
@@ -44,36 +44,36 @@
         </button>
     </section>
     </header>
-  <body>
-    <section class="flex justify-center">
-      <div class="flex flex-col justify-center items-center w-[1199px] h-[666px] px-[120px] py-[80px] rounded-[24px] bg-white/70">
+    <section class="flex flex-row justify-center">
+      <div class="flex flex-col justify-center items-center w-4/5 h-[600px] px-[120px] pb-[80px] rounded-[24px] bg-white/70">
         <h1 class="text-4xl font-bold m-0 ">Get in Touch</h1>
-        <form class=" mb-0 justify-center items-center w-[589px] h-[322px] gap-[20px] p-6 rounded-lg">    
         <div>
-          <label for="Name">Name<br></label>
-          <input class="h-10 border-2 border-black/10 border-1px border[#FFFFFFB2] rounded-[12px] w-full" id="Name" type="text" placeholder=" John Doe"  >
+        <form class="mb-0 justify-center items-center w-[589px] h-[322px] p-6 rounded-lg">    
+        <div>
+          <label class="text-[#5F5F76]" for="Name">Name</label>
+          <input class="hover:border-[#B5A9FF] focus:border-[#5E44FF] mb-6 h-10 border-2  rounded-[12px] w-full" id="Name" type="text" placeholder="   John Doe"  >
         </div>
         <div>
-          <label for="email">Email</br></label>
-          <input class="h-10 border-2 border-black/10 hight-[20px] rounded-[12px] w-full" id="email" type="email" placeholder=" john@exsample,com">
+          <label class="text-[#5F5F76]" for="email">Email</label>
+          <input class="hover:border-[#B5A9FF] focus:border-[#5E44FF] mb-6 h-10 border-2  rounded-[12px] w-full" id="email" type="email" placeholder="   john@exsample,com">
         </div>
         <div>
-          <label for="massage">Massage<br></label>
-          <textarea class=" border-2 border-black/10 rounded-[12px] w-full" rows="4" column="50" placeholder=" ํYour massage..."></textarea>
+          <label class="text-[#5F5F76]" for="massage">Massage</label>
+          <textarea class=" border-2 hover:border-[#B5A9FF] rounded-[12px] w-full" rows="4" cols="50" placeholder="   ํYour massage..."></textarea>
         </div>
-        <button class="mt-8  w-full h-[56px] px-[36px] py-[16px] gap-[6px] rounded-[16px] bg-[#1A1A2C] text-white text-lg font-semibold">Submit</button>
+        <button class="bg-[#1A1A2C] hover:bg-[#5F5F76] focus:outline-none focus:ring-4 focus:ring-[#5F5F76] focus:ring-opacity-50เ mt-8  w-full h-[56px] px-[36px] py-[16px] rounded-[16px]  text-white text-lg font-semibold">Submit</button>
       </form>
     </div>
     </section>
-    <nav>
-      <nav class="mt-6 w-full text-black p-1 flex justify-around items-center">
+    <footer>
+      <nav class="mb-16 mt-16 w-full text-black p-1 flex justify-around items-center">
         <h4 class="text-sm">Acme productivity app &copy; 2024 </h4>
         <div class="flex gap-[37px] ">
-        <h3>FAQ</h3>
-        <h3>Terms</h3>
-        <h3>AI Policy</h3>
-        <h3>Pricing</h3>
-      </div>
-    </nav>
+        <a>FAQ</a>
+        <a>Terms</a>
+        <a>AI Policy</a>
+        <a>Pricing</a>
+      </nav>
+    </footer>
   </body>
 </html>
