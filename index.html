@@ -6,8 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+          background: #F6F6FB;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="flex flex-col items-center">
+    <header class="flex flex-col h-screen w-screen">
+      <nav class="sticky top-0 z-10 bg-white shadow-sm p-4 pl-10 pr-20 rounded-full mx-[30px] mt-[24px]">
+        <div class="w-full flex justify-between items-center px-4">
+          <div class="relative">
+            <h1 class="text-xl font-bold">Acme</h1>
+            <span class="absolute top-2 -right-1 w-2 h-2 bg-[#5E44FF]  rounded-full transform -translate-y-1/2 translate-x-1/2"></span>
+          </div>
+          <ul class="flex text-[16px] font-semibold gap-11">
+            <li><a href="#" class="text-[#1A1A2C] hover:text-[#5E44FF] hover:underline">Home</a></li>
+            <li><a href="#" class="text-[#1A1A2C] hover:text-[#5E44FF]hover:underline">Features</a></li>
+            <li><a href="#" class="text-[#1A1A2C] hover:text-[#5E44FF]hover:underline">Pricing</a></li>
+            <li><a href="#" class="text-[#1A1A2C] hover:text-[#5E44FF]hover:underline">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="text-center px-6 mt-[120px] mb-[140px]">
+        <div class="inline-flex items-center px-[20px] py-[8px] bg-purple-100 text-[#5E44FF] font-semibold text-[16px] rounded-full">
+            <span class="mr-2">🌈</span> Acme Productivity App
+        </div>
+        <h1 class="text-[80px] font-bold text-gray-900 mt-4">
+            Boost Your <span class="text-[#5E44FF]">Product</span>ivity
+        </h1>
+        <p class="text-gray-700 mt-3 text-[24px] font-semibold">
+            Streamline your workflow with our all-in-one productivity app.
+        </p>
+        <button class="mt-6 bg-[#1A1A2C] text-white w-[184px] h-[56px] text-lg rounded-xl shadow-md hover:bg-[#5F5F76] focus:outline-none focus:ring-4 focus:ring-[#5F5F76] focus:ring-opacity-50 mt-[50px] mb-[50px]">
+            Start Free Trial
+        </button>
+    </section>
+    </header>
   </body>
 </html>
