@@ -7,7 +7,41 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  
     <!-- Start Coding Here -->
+  <body class="bg-[#F6F6FB]">
+        <!-- Navigation -->
+        <nav class="container bg-[#FFFFFF] mx-auto px-6 py-4 rounded-[99px]">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold">Acme</span>
+                    <span class="text-purple-500 text-xl">.</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-[#5E44FF] underline">Home</a>
+                    <a href="#" class="text-[#1A1A2C] hover:text-gray-900">Features</a>
+                    <a href="#" class="text-[#1A1A2C] hover:text-">Pricing</a>
+                    <a href="#" class="text-[#1A1A2C] hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <main class="container mx-auto px-6 pt-16 pb-24">
+            <div class="text-center">
+                <div class="inline-block px-3 py-1 mb-6 text-sm bg-purple-100 text-purple-600 rounded-full">
+                    🌈 Acme Productivity App
+                </div>
+                <h1 class="text-5xl font-bold mb-6">
+                    Boost Your <span class="text-purple-600">Product</span>ivity
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Streamline your workflow with our all-in-one productivity app.
+                </p>
+                <button class="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800">
+                    Start Free Trial
+                </button>
+              </div>
+        </main>
   </body>
 </html>
