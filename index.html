@@ -8,54 +8,86 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       body {
-          background: #F6F6FB;
-          font-family: Arial, Helvetica, sans-serif;
+        background: #f6f6fb;
+        font-family: Arial, Helvetica, sans-serif;
       }
     </style>
   </head>
   <body class="flex flex-col items-center">
-    <header class="flex flex-col h-screen w-screen">
-      <nav class="sticky top-0 z-10 bg-white shadow-sm p-4 pl-10 pr-20 rounded-full mx-[30px] mt-[24px]">
+    <header class="flex flex-col w-screen">
+      <nav
+        class="sticky top-0 z-10 bg-white shadow-sm p-4 pl-10 pr-20 rounded-full mx-[30px] mt-[24px]"
+      >
         <div class="w-full flex justify-between items-center px-4">
           <div class="relative">
             <h1 class="text-xl font-bold">Acme</h1>
-            <span class="absolute top-2 -right-1 w-2 h-2 bg-[#5E44FF]  rounded-full transform -translate-y-1/2 translate-x-1/2"></span>
+            <span
+              class="absolute top-2 -right-1 w-2 h-2 bg-[#5E44FF] rounded-full transform -translate-y-1/2 translate-x-1/2"
+            ></span>
           </div>
           <ul class="flex text-[16px] font-semibold gap-11">
-            <li><a href="#" class="text-[#1A1A2C] hover:text-[#5E44FF] hover:underline">Home</a></li>
-            <li><a href="#" class="text-[#1A1A2C] hover:text-[#5E44FF]hover:underline">Features</a></li>
-            <li><a href="#" class="text-[#1A1A2C] hover:text-[#5E44FF]hover:underline">Pricing</a></li>
-            <li><a href="#" class="text-[#1A1A2C] hover:text-[#5E44FF]hover:underline">Contact</a></li>
+            <li>
+              <a
+                href="#"
+                class="text-[#1A1A2C] hover:text-[#5E44FF] hover:underline"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#1A1A2C] hover:text-[#5E44FF]hover:underline"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#1A1A2C] hover:text-[#5E44FF]hover:underline"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#1A1A2C] hover:text-[#5E44FF]hover:underline"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
       <section class="text-center px-6 mt-[120px] mb-[140px]">
-        <div class="inline-flex items-center px-[20px] py-[8px] bg-purple-100 text-[#5E44FF] font-semibold text-[16px] rounded-full">
-            <span class="mr-2">🌈</span> Acme Productivity App
+        <div
+          class="inline-flex items-center px-[20px] py-[8px] bg-purple-100 text-[#5E44FF] font-semibold text-[16px] rounded-full"
+        >
+          <span class="mr-2">🌈</span> Acme Productivity App
         </div>
         <h1 class="text-[80px] font-bold text-gray-900 mt-4">
-            Boost Your <span class="text-[#5E44FF]">Product</span>ivity
+          Boost Your <span class="text-[#5E44FF]">Product</span>ivity
         </h1>
         <p class="text-gray-700 mt-3 text-[24px] font-semibold">
-            Streamline your workflow with our all-in-one productivity app.
+          Streamline your workflow with our all-in-one productivity app.
         </p>
-        <button class="mt-6 bg-[#1A1A2C] text-white w-[184px] h-[56px] text-lg rounded-xl shadow-md hover:bg-[#5F5F76] focus:outline-none focus:ring-4 focus:ring-[#5F5F76] focus:ring-opacity-50 mt-[50px] mb-[50px]">
-            Start Free Trial
+        <button
+          class="mt-6 bg-[#1A1A2C] text-white w-[184px] h-[56px] text-lg rounded-xl shadow-md hover:bg-[#5F5F76] focus:outline-none focus:ring-4 focus:ring-[#5F5F76] focus:ring-opacity-50 mb-[50px]"
+        >
+          Start Free Trial
         </button>
-    </section>
+      </section>
     </header>
-  <body>
     <!-- Start Coding Here -->
-    <div
-      class="bg-gray-50 flex items-center justify-center min-h-screen flex space-x-10"
-    >
-      <div
-        class="w-[387px] h-[272px] rounded-[24px] p-[28px] gap-[40px] bg-blue-100 text-center"
-      >
-        <div class="icon">
-          <img src="/pic/Vector.png" /><i class="fa-solid fa-rocket"></i>
+    <div class="flex items-center justify-center gap-10">
+      <div class="w-[387px] h-[272px] rounded-[24px] bg-blue-100 p-8">
+        <div
+          class="bg-white w-[60px] h-[60px] rounded-[16px] flex items-center justify-center mb-9 gap-6"
+          flex
+          items-center
+          justify-center
+        >
+          <img class="flex items-center justify-center" src="/pic/Vector.png" />
         </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-2">
+        <h3 class="text-xl font-bold text-gray-800 mb-2 mt-4">
           Streamlined Workflows
         </h3>
         <p class="text-gray-600">
@@ -64,11 +96,13 @@
         </p>
       </div>
       <!-- card2 -->
-      <div
-        class="w-[387px] h-[272px] rounded-[24px] p-[28px] gap-[40px] bg-[#D8E0FC]"
-      >
-        <div class="icon"></div>
-        <h3 class="text-xl font-bold text-gray-800 mb-2">
+      <div class="w-[387px] h-[272px] rounded-[24px] p-[28px] bg-[#D8E0FC]">
+        <div
+          class="bg-white w-[60px] h-[60px] rounded-[16px] flex items-center justify-center mb-9 gap-6"
+        >
+          <img src="/pic/Vector (2).png" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2 mt-4">
           Blazing Fast Performance
         </h3>
         <p class="text-gray-600">
@@ -77,11 +111,15 @@
         </p>
       </div>
       <!-- card3 -->
-      <div
-        class="w-[387px] h-[272px] rounded-[24px] p-[28px] gap-[40px] bg-[#E8DCF6]"
-      >
-        <div class="icon"><i class="fa-solid fa-face-smile"></i></div>
-        <h3 class="text-xl font-bold text-gray-800 mb-2">Intutive Interface</h3>
+      <div class="w-[387px] h-[272px] rounded-[24px] p-[28px] bg-[#E8DCF6]">
+        <div
+          class="bg-white w-[60px] h-[60px] rounded-[16px] flex items-center justify-center mb-9"
+        >
+          <img src="/pic/Vector (1).png" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2 mt-4">
+          Intutive Interface
+        </h3>
         <p class="text-gray-600">
           Our user-friendly interface makes it easy for anyone to streamline
           their workflow.
