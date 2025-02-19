@@ -11,9 +11,9 @@
 <body class="bg-[#F6F6FB]">
 
   <!-- header -->
-  <header class = "w-full px-6">
+  <header class = "w-full p-4 md:p-6 ">
   <!-- Navbar -->
-    <nav class="bg-white shadow-md my-6 py-3 md:px-20 px-6 w-full h-full rounded-[99px] flex justify-between items-center relative">
+    <nav class="bg-white shadow-md py-3 md:px-20 px-6 w-full h-full rounded-[99px] flex justify-between items-center relative">
       <div><img src="logo.svg" alt="Acme Logo"></div>
         <ul class = "hidden md:flex gap-10 text-lg">
             <li><a href="#" class="text-[#1A1A2C] hover:text-[#5E44FF] hover:underline">Home</a></li>
@@ -42,13 +42,16 @@
   </header>
   <!-- Hero Section -->
   <section class="text-center">
-    <div class=" flex flex-col items-center mx-[120px] mt-[120px] gap-10">
-      <p class="py-2 px-5 rounded-full text-[#5E44FF] bg-[#563AFF] bg-opacity-10">🌈️ Acme Productivity App</p>
-      <div class="text-center flex flex-col gap-6">
-        <h1 class="text-[80px] font-bold">Boost Your <span class="text-[#5E44FF]">Product</span>ivity</h1>
-        <h3 class="text-2xl font-semibold">Streamline your workflow with our all-in-one productivity app.</h3>
+    <div class=" flex flex-col items-center pt-[40px] md:pt-[120px] gap-10 w-full md:px-6 px-4">
+      <div class = "p-2 h-10 w-[236px] rounded-full bg-[#563AFF] bg-opacity-10">
+        <p class = "text-[#5E44FF]" >🌈️ Acme Productivity App</p>
       </div>
-      <button class="bg-[#1A1A2C] text-white py-4 px-9 rounded-xl text-lg w-[187px]
+
+      <div class="text-center flex flex-col gap-6 w-full">
+        <h1 class="text-[44px] md:text-[80px] font-bold">Boost Your <span class="text-[#5E44FF]">Product</span>ivity</h1>
+        <h3 class="text-[24px] md:text-2xl font-semibold px-4">Streamline your workflow with our all-in-one productivity app.</h3>
+      </div>
+      <button class="bg-[#1A1A2C] text-white py-4 px-9 rounded-xl text-lg w-[187px] cursor-pointer
              hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-2 focus:ring-[#5F5F76]">Start Free Trial</button>
     </div>
   </section>
