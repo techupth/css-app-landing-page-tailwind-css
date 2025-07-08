@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- Start Coding Here -->
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acme Productivity App</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#F6F6FB]">
+  <!-- Navbar -->
+  <nav class="flex justify-center px-6 py-6 fixed top-0 right-0 left-0 z-50">
+    <div class="flex items-center justify-between w-full bg-white rounded-full shadow px-8 py-4">
+      <div class="flex items-center">
+        <span class="text-2xl font-bold text-gray-900">Acme</span>
+        <span class="ml-1 text-xs text-[#9393AC] font-bold align-super">•</span>
+      </div>
+      <ul class="flex space-x-8 text-sm font-medium">
+        <li><a href="#" class="text-indigo-600 border-b-2 border-indigo-500 pb-1">Home</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-indigo-600">Features</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-indigo-600">Pricing</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-indigo-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center mt-24">
+    <div class="bg-indigo-100 text-indigo-600 px-4 py-2 rounded-full text-sm flex items-center mb-6">
+      🌈Acme Productivity App
+    </div>
+    <h1 class="text-5xl md:text-6xl font-extrabold text-center text-gray-900 mb-4">
+      Boost Your <span class="text-indigo-500">Product</span>ivity
+    </h1>
+    <p class="text-lg text-gray-700 text-center mb-8 max-w-xl font-bold">
+      Streamline your workflow with our all-in-one productivity app.
+    </p>
+    <button class="bg-gray-900 text-white px-8 py-3 rounded-xl font-semibold shadow hover:bg-gray-800 transition">Start Free Trial</button>
+  </section>
+</body>
 </html>
