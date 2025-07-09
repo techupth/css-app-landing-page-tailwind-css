@@ -4,10 +4,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="bg-[#F6F6FB] min-h-screen">
+    <!-- Navbar -->
+    <header class="w-full flex justify-center pt-6">
+      <nav class="bg-white w-[95%] flex flex-row  justify-between items-center px-8 py-4 rounded-full shadow-sm">
+        <div>
+          <span class="text-2xl font-extrabold text-[#1A1A2C]">Acme<sup class="text-[#5E4AFF] text-base">•</sup></span>
+        </div>
+        <ul class="flex flex-row gap-8 font-medium text-[#1A1A2C] overflow-hidden">
+          <li>
+            <a href="#" class="hover:text-[#5E4AFF] hover:underline hover:underline-offset-2 hover:decoration-2 transition">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#5E4AFF] hover:underline hover:underline-offset-2 hover:decoration-2 transition">Features</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#5E4AFF] hover:underline hover:underline-offset-2 hover:decoration-2 transition">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#5E4AFF] hover:underline hover:underline-offset-2 hover:decoration-2 transition">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex flex-col items-center mt-24">
+      <span class="bg-[#E0E0ED] text-[#5E4AFF] font-medium px-5 py-2 rounded-full mb-6 text-base flex items-center gap-2">
+        <span>🌈</span> Acme Productivity App
+      </span>
+      <h1 class="text-5xl font-extrabold text-[#1A1A2C] text-center mb-4 md:text-7xl overflow-hidden">
+        Boost Your <span class="text-[#5E4AFF]">Product</span>ivity
+      </h1>
+      <p class="text-xl text-[#1A1A2C] text-center mb-8 font-medium">
+        Streamline your workflow with our all-in-one productivity app.
+      </p>
+      <button class="bg-[#1A1A2C] text-white px-8 py-3 rounded-xl font-semibold text-base shadow hover:bg-[#23233a] transition">
+        Start Free Trial
+      </button>
+    </main>
+    
+
+
+    <!-- Feature Section -->
+    <section class="w-full flex justify-center py-16">
+      <div class="flex gap-6 max-w-[80%] w-full px-10">
+        <!-- Card 1 -->
+        <div class="bg-[#E3EAF6] rounded-xl p-8 flex-1 max-w-[33%] overflow-hidden">
+          <div class="bg-white w-10 h-10 flex items-center justify-center rounded-lg mb-4">
+            <img src="assets/icons/icon1.png" alt="icon1" class="w-6 h-6" />
+          </div>
+          <h3 class="font-bold text-xl mb-2">Streamlined Workflows</h3>
+          <p class="text-sm text-[#9393AC]">Automate repetitive tasks and focus on high-impact work with our powerful productivity features.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-[#E3E6FB] rounded-xl p-8 flex-1 max-w-[33%] overflow-hidden">
+          <div class="bg-white w-10 h-10 flex items-center justify-center rounded-lg mb-4">
+            <img src="assets/icons/icon2.png" alt="icon2" class="w-6 h-6" />
+          </div>
+          <h3 class="font-bold text-xl mb-2">Blazing Fast Performance</h3>
+          <p class="text-sm text-[#9393AC]">Experience lightning-fast performance and instant responsiveness with our cutting-edge technology.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-[#EDE6F8] rounded-xl p-8 flex-1 max-w-[33%] overflow-hidden">
+          <div class="bg-white w-10 h-10 flex items-center justify-center rounded-lg mb-4">
+            <img src="assets/icons/icon3.png" alt="icon3" class="w-6 h-6" />
+          </div>
+          <h3 class="font-bold text-xl mb-2">Intuitive Interface</h3>
+          <p class="text-sm text-[#9393AC]">Our user-friendly interface makes it easy for anyone to streamline their workflow.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="w-full flex justify-center py-16">
+      <div class="bg-white rounded-2xl shadow-md p-20 max-w-[75%] w-full">
+        <h2 class="text-3xl font-bold text-center mb-8 max-md:text-xl">Get in Touch</h2>
+        <form class="px-[20%] flex flex-col gap-4 overflow-hidden">
+          <div>
+            <label class="block text-sm font-medium mb-1" for="name">Name</label>
+            <input type="text" id="name" placeholder="John Doe" class="w-full border border-[#E0E0ED] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#5E4AFF]"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="email">Email</label>
+            <input type="email" id="email" placeholder="john@example.com" class="w-full border border-[#E0E0ED] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#5E4AFF]"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="message">Message</label>
+            <textarea id="message" placeholder="Your message..." class="w-full border border-[#E0E0ED] rounded-lg px-4 py-2 h-24 focus:outline-none focus:ring-2 focus:ring-[#5E4AFF]"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-[#1A1A2C] text-white rounded-lg py-3 font-medium hover:bg-[#23233a] transition mt-4">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+     <footer class="w-full flex justify-center">
+      <div class="w-5/6 flex flex-col md:flex-row justify-between items-center px-12 py-8 text-[#9393AC] text-sm">
+        <div class="mb-4 md:mb-0">Acme productivity app ©2024</div>
+        <nav class="flex gap-8 font-medium text-[#1A1A2C]">
+          <a href="#" class="hover:underline">FAQ</a>
+          <a href="#" class="hover:underline">Terms</a>
+          <a href="#" class="hover:underline">AI Policy</a>
+          <a href="#" class="hover:underline">Pricing</a>
+        </nav>
+     </div>
+    </footer>
   </body>
 </html>
+
