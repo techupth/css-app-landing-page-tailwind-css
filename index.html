@@ -7,7 +7,189 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+
+  <body class="bg-[#F6F6FB] min-h-screen">
+    <!-- Navbar -->
+    <nav
+      class="bg-white/90 border border-[#eceafd] rounded-full mt-4 mx-2 px-10 py-3 flex items-center justify-between shadow-sm max-w-5xl mx-auto"
+      style="height: 64px"
+    >
+      <div class="flex items-center">
+        <span
+          class="text-[1.6rem] font-extrabold text-[#232233] tracking-tight flex items-center"
+        >
+          Acme
+          <span
+            class="ml-1 text-purple-600 text-[0.8rem] align-super"
+            style="font-size: 0.8rem"
+            >•</span
+          >
+        </span>
+      </div>
+      <ul class="flex space-x-10 text-[#232233] font-medium text-[1.05rem]">
+        <li>
+          <a
+            href="#"
+            class="text-[#5b3df2] underline underline-offset-4 decoration-2 font-normal hover:text-[#5E44FF] hover:underline"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:text-[#5E44FF] hover:underline font-normal"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:text-[#5E44FF] hover:underline font-normal"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:text-[#5E44FF] hover:underline font-normal"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <section class="flex flex-col items-center justify-center mt-16 mb-12">
+      <span
+        class="bg-purple-100 text-purple-700 px-4 py-1 rounded-full text-sm font-medium flex items-center mb-6"
+      >
+        🌈 Acme Productivity App
+      </span>
+      <h1 class="text-5xl font-extrabold text-gray-900 mb-4 text-center">
+        Boost Your <span class="text-purple-600">Product</span>ivity
+      </h1>
+      <p class="text-lg text-gray-600 mb-8 text-center">
+        Streamline your workflow with our all-in-one productivity app.
+      </p>
+      <button
+        class="w-[187px] px-9 py-4 rounded-2xl bg-[#1A1A2C] text-white font-semibold transition-colors duration-200 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-2 focus:ring-[#5F5F76]"
+      >
+        Start Free Trial
+      </button>
+    </section>
+
+    <section class="flex justify-center mb-16">
+      <div class="flex gap-0">
+        <!-- Card 1 -->
+        <div
+          class="bg-blue-200 rounded-l-2xl p-8 w-80 shadow-sm border-r border-white"
+        >
+          <div
+            class="bg-white w-10 h-10 flex items-center justify-center rounded-lg mb-4"
+          >
+            <span class="text-2xl text-blue-500">🚀</span>
+          </div>
+          <h3 class="font-bold text-xl mb-2 text-gray-800">
+            Streamlined Workflows
+          </h3>
+          <p class="text-gray-600 text-sm font-bold">
+            Automate repetitive tasks and focus on high-impact work with our
+            powerful productivity features.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-indigo-200 p-8 w-80 shadow-sm border-r border-white">
+          <div
+            class="bg-white w-10 h-10 flex items-center justify-center rounded-lg mb-4"
+          >
+            <span class="text-2xl text-indigo-500">⚡</span>
+          </div>
+          <h3 class="font-bold text-xl mb-2 text-gray-800">
+            Blazing Fast Performance
+          </h3>
+          <p class="text-gray-600 text-sm font-bold">
+            Experience lightning-fast performance and instant responsiveness
+            with our cutting-edge technology.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-purple-200 rounded-r-2xl p-8 w-80 shadow-sm">
+          <div
+            class="bg-white w-10 h-10 flex items-center justify-center rounded-lg mb-4"
+          >
+            <span class="text-2xl text-purple-500">😊</span>
+          </div>
+          <h3 class="font-bold text-xl mb-2 text-gray-800">
+            Intuitive Interface
+          </h3>
+          <p class="text-gray-600 text-sm font-bold">
+            Our user-friendly interface makes it easy for anyone to streamline
+            their workflow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col items-center justify-center mb-10">
+      <div class="bg-white rounded-3xl shadow-md p-10 w-full max-w-2xl">
+        <h2 class="text-5xl font-bold text-center mb-8" style="color: #1a1a2c">
+          Get in Touch
+        </h2>
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block text-gray-700 font-semibold mb-2"
+              >Name</label
+            >
+            <input
+              id="name"
+              type="text"
+              placeholder="John Doe"
+              class="w-full px-3 py-3 border border-[#E0E0ED] rounded-lg focus:outline-none transition-colors duration-200 focus:border-[#5E44FF] hover:border-[#B5A9FF]"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 font-semibold mb-2"
+              >Email</label
+            >
+            <input
+              id="email"
+              type="email"
+              placeholder="john@example.com"
+              class="w-full px-3 py-3 border border-[#E0E0ED] rounded-lg focus:outline-none transition-colors duration-200 focus:border-[#5E44FF] hover:border-[#B5A9FF]"
+            />
+          </div>
+          <div>
+            <label for="message" class="block text-gray-700 font-semibold mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              placeholder="Your message..."
+              class="w-full px-3 py-3 border border-[#E0E0ED] rounded-lg focus:outline-none transition-colors duration-200 focus:border-[#5E44FF] hover:border-[#B5A9FF]"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-[589px] px-9 py-4 rounded-2xl bg-[#1A1A2C] text-white font-semibold transition-colors duration-200 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-2 focus:ring-[#5F5F76]"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer
+      class="flex flex-col md:flex-row justify-between items-center px-8 py-6 bg-transparent text-gray-500 text-sm gap-2 mt-10 w-full max-w-xl"
+    >
+      <div>Acme productivity app ©2024</div>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-[#5E44FF] hover:underline transition"
+          >FAQ</a
+        >
+        <a href="#" class="hover:text-[#5E44FF] hover:underline transition"
+          >Terms</a
+        >
+        <a href="#" class="hover:text-[#5E44FF] hover:underline transition"
+          >AI Policy</a
+        >
+        <a href="#" class="hover:text-[#5E44FF] hover:underline transition"
+          >Pricing</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
