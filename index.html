@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +8,201 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="bg-[#f6f6fb]">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md rounded-full m-3 md:m-5">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-6 flex justify-between items-center">
+        <div class="text-xl md:text-2xl font-bold text-gray-900">Acme<span class="text-[#5e44ff]">*</span></div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="text-gray-600 font-bold hover:text-[#5e44ff] hover:underline">Home</a>
+          <a href="#" class="text-gray-600 font-bold hover:text-[#5e44ff] hover:underline">Features</a>
+          <a href="#" class="text-gray-600 font-bold hover:text-[#5e44ff] hover:underline">Pricing</a>
+          <a href="#" class="text-gray-600 font-bold hover:text-[#5e44ff] hover:underline">Contact</a>
+        </nav>
+        
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-btn" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-50 hidden">
+      <!-- Backdrop -->
+      <div class="absolute inset-0 bg-black bg-opacity-30" id="menu-backdrop"></div>
+      
+      <!-- Menu Panel -->
+      <div class="absolute left-0 top-0 h-full w-[280px] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out" id="menu-panel">
+        <div class="p-6">
+          <!-- Logo -->
+          <div class="mb-12">
+            <div class="text-2xl font-bold text-gray-900">Acme<span class="text-[#5e44ff]">*</span></div>
+          </div>
+          
+          <!-- Navigation Links -->
+          <nav class="flex flex-col space-y-1">
+            <a href="#" class="text-gray-700 font-semibold py-3 px-4 rounded-lg hover:bg-gray-50 hover:text-[#5e44ff] transition-colors">Home</a>
+            <a href="#" class="text-gray-700 font-semibold py-3 px-4 rounded-lg hover:bg-gray-50 hover:text-[#5e44ff] transition-colors">Features</a>
+            <a href="#" class="text-gray-700 font-semibold py-3 px-4 rounded-lg hover:bg-gray-50 hover:text-[#5e44ff] transition-colors">Pricing</a>
+            <a href="#" class="text-gray-700 font-semibold py-3 px-4 rounded-lg hover:bg-gray-50 hover:text-[#5e44ff] transition-colors">Contact</a>
+          </nav>
+        </div>
+        
+        <!-- Close button -->
+        <button id="close-menu" class="absolute top-6 right-6 p-2 rounded-lg hover:bg-gray-100 focus:outline-none transition-colors">
+          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <main class="max-w-3xl mx-auto px-4 md:px-6 py-12 md:py-24 text-center">
+      <div class="inline-flex items-center gap-2 bg-[#d9d7f3] text-[#5e44ff] px-3 md:px-4 py-1.5 md:py-2 rounded-full mb-4 md:mb-6 text-xs md:text-sm font-medium">
+        🌈 <span>สวัสดีครับผมเอิงเอยนะครับ</span>
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 md:mb-6">
+        Boost Your <span class="text-[#5e44ff]">Product</span><span>ivity</span>
+      </h1>
+      <p class="text-base md:text-lg text-gray-900 mb-6 md:mb-8 font-bold px-4">
+        Streamline your workflow with our all-in-one productivity app.
+      </p>
+      <a href="#" class="inline-block bg-[#1A1A2C] text-white px-8 md:px-9 py-3 md:py-4 rounded-2xl text-sm md:text-base font-semibold hover:bg-[#5f5f76] transition focus:bg-[#35354d] focus:ring focus:ring-[#5F5F76] focus:ring-offset-2">
+        Start Free Trial
+      </a>
+    </main>
+
+    
+    <!-- ฟีเจอรการ์ดอยู่ตรงนี้ครับบบบ  --> 
+     <!-- ฝากดูด้วยครับ  --> 
+    <div class="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center p-4 md:p-6 max-w-6xl mx-auto">
+      <!-- Card 1 -->
+      <div class="bg-blue-100 rounded-3xl p-6 md:p-8 flex-1 w-full max-w-sm md:max-w-xs flex flex-col items-start shadow-sm">
+        <div class="bg-white bg-opacity-60 rounded-xl p-2.5 md:p-3 mb-4 md:mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-7 md:w-7 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L8.5 21m5.75-4l1.25 4m-7.5-4h8.5M12 3v14m0 0c-4.418 0-8 1.343-8 3v1h16v-1c0-1.657-3.582-3-8-3z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg md:text-xl font-semibold mb-2 text-gray-900">Streamlined Workflows</h3>
+        <p class="text-gray-600 text-sm">Automate repetitive tasks and focus on high-impact work with our powerful productivity features.</p>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-indigo-100 rounded-3xl p-6 md:p-8 flex-1 w-full max-w-sm md:max-w-xs flex flex-col items-start shadow-sm">
+        <div class="bg-white bg-opacity-60 rounded-xl p-2.5 md:p-3 mb-4 md:mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-7 md:w-7 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v18h18M3 9h18M9 21V3"/>
+          </svg>
+        </div>
+        <h3 class="text-lg md:text-xl font-semibold mb-2 text-gray-900">Blazing Fast Performance</h3>
+        <p class="text-gray-600 text-sm">Experience lightning-fast performance and instant responsiveness with our cutting-edge technology.</p>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-purple-100 rounded-3xl p-6 md:p-8 flex-1 w-full max-w-sm md:max-w-xs flex flex-col items-start shadow-sm">
+        <div class="bg-white bg-opacity-60 rounded-xl p-2.5 md:p-3 mb-4 md:mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-7 md:w-7 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M9.5 10.5c.667.667 1.333 1 2 1s1.333-.333 2-1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="10" r="1" fill="currentColor"/>
+            <circle cx="15" cy="10" r="1" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3 class="text-lg md:text-xl font-semibold mb-2 text-gray-900">Intuitive Interface</h3>
+        <p class="text-gray-600 text-sm">Our user-friendly interface makes it easy for anyone to streamline their workflow.</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="flex-grow flex items-center justify-center px-4 py-8 md:mt-16">
+      <div class="bg-white p-6 md:p-16 rounded-3xl shadow-lg max-w-4xl w-full">
+        <div class="max-w-[587px] mx-auto">
+          <h1 class="text-3xl md:text-5xl font-semibold text-[#1A1A2C] text-center mb-6 md:mb-8">Get in Touch</h1>
+          
+          <form class="space-y-4 md:space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe"
+                class="w-full p-3 text-sm border border-[#e0e0ed] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-[#5e44ff] placeholder-gray-400 hover:border-[#b5a9ff] focus:placeholder-transparent"/>
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com"
+                class="w-full p-3 text-sm border border-[#e0e0ed] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-[#5e44ff] placeholder-gray-400 hover:border-[#b5a9ff] focus:placeholder-transparent"/>
+            </div>
+            
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Your message..."
+                class="w-full p-3 text-sm border border-[#e0e0ed] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-[#5e44ff] placeholder-gray-400 hover:border-[#b5a9ff] focus:placeholder-transparent"></textarea>
+            </div>
+            
+            <div class="pt-2">
+              <button type="submit"
+                class="w-full bg-[#1a1a2c] text-white py-3 md:py-4 px-6 md:px-9 text-sm font-medium rounded-2xl hover:bg-[#5f5f76] focus:outline-none focus:ring-2 focus:ring-[#5f5f76] focus:ring-offset-2 transition duration-200 focus:bg-[#35354d]">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="px-4 py-6">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+        <div class="text-xs md:text-sm text-gray-600 mb-4 sm:mb-0">
+          Acme productivity app ©2024
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+          <a href="#" class="text-xs md:text-sm text-gray-600 hover:text-gray-900 transition duration-200">FAQ</a>
+          <a href="#" class="text-xs md:text-sm text-gray-600 hover:text-gray-900 transition duration-200">Terms</a>
+          <a href="#" class="text-xs md:text-sm text-gray-600 hover:text-gray-900 transition duration-200">AI Policy</a>
+          <a href="#" class="text-xs md:text-sm text-gray-600 hover:text-gray-900 transition duration-200">Pricing</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const closeMenuBtn = document.getElementById('close-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuBackdrop = document.getElementById('menu-backdrop');
+      const menuPanel = document.getElementById('menu-panel');
+      
+      // Open menu
+      hamburgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+        // Add slight delay for animation
+        setTimeout(() => {
+          menuPanel.style.transform = 'translateX(0)';
+        }, 10);
+      });
+      
+      // Close menu function
+      const closeMenu = () => {
+        menuPanel.style.transform = 'translateX(-100%)';
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
+      };
+      
+      // Close button
+      closeMenuBtn.addEventListener('click', closeMenu);
+      
+      // Close when clicking backdrop
+      menuBackdrop.addEventListener('click', closeMenu);
+      
+      // Initialize menu position
+      menuPanel.style.transform = 'translateX(-100%)';
+    </script>
   </body>
 </html>
