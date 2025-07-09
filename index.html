@@ -6,8 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- Start Coding Here -->
-  </body>
+
+
+</head>
+  <body class="box-border m-0 p-0 font-['Inter',sans-serif] w-full min-h-screen bg-[#F6F6FB]">
+    <!-- Navbar -->
+    <nav class="w-full p-4 sm:p-6">
+        <div class="bg-white flex flex-row justify-between items-center w-full py-3 sm:py-3 px-4 sm:px-8 md:px-20 rounded-[99px] shadow-[0px_4px_20px_0px_#9379CA0D]">    
+                <img src="/img/Logo.png" class="w-[91.67px] h-[40px]" alt="logo">
+                <img src="/img/Frame.png" class="block sm:hidden" alt="logo">
+          <ul class="hidden sm:flex flex-row justify-center sm:justify-between items-center gap-4 sm:gap-8 w-full sm:w-auto mt-4 sm:mt-0">
+            <li>
+                <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Home</a>
+            </li>
+            <li>
+                <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Features</a>
+            </li>
+            <li>
+                <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Pricing</a>
+            </li>
+            <li>
+                <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Contact</a>
+            </li>
+          </ul>         
+        </div>
+        <!-- nav-second -->        
+        <ul class="flex flex-col sm:hidden justify-center items-center gap-4  bg-white rounded-[24px] mt-4 py-3 px-6">
+          <li>
+              <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Home</a>
+          </li>
+          <li>
+              <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Features</a>
+          </li>
+          <li>
+              <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Pricing</a>
+          </li>
+          <li>
+              <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    <!-- Hero Section -->
+      <section class="w-full px-4 md:px-8 lg:px-20 py-12 md:py-20 lg:py-32">
+        <div class="w-full max-w-6xl mx-auto flex flex-col justify-between items-center md:gap-[40px] gap-8">
+          <div class="w-auto md:w-[236px] px-4 md:px-5 py-2 md:py-2 rounded-[999px] bg-[#563AFF1A]">
+            <p class="text-[14px] md:text-[16px] font-[500px] leading-[20px] md:leading-[24px] text-center text-[#5E44FF]">🌈️ Acme Productivity App</p>
+          </div>
+          <div class="w-full text-center space-y-4 md:space-y-6">  
+            <h1 class="text-4xl md:text-6xl lg:text-[80px] font-extrabold leading-tight md:leading-[84px] tracking-tight md:tracking-[-5px] text-[#1a1a2c]">Boost Your <span class="text-[#5E44FF]">Product</span>ivity</h1>
+            <h3 class="text-lg md:text-xl lg:text-[24px] font-semibold leading-tight md:leading-[32px] text-[#1a1a2c] px-4">Streamline your workflow with our all-in-one productivity app.</h3>
+          </div>
+          <button class="w-auto md:w-[187px] px-6 md:px-9 py-3 md:py-4 rounded-[16px] bg-[#1a1a2c] text-white text-[14px] md:text-[16px] leading-[20px] md:leading-[24px] font-semibold text-center cursor-pointer">Start Free Trial</button>
+        </div>
+      </section>
+<div class="w-full flex justify-center py-20">
+      <div
+          class="flex flex-col md:flex-row gap-8 max-w-5xl w-full">
+          <!-- Card 1 -->
+          <div class="flex-1 bg-[#D7E5F6] w-[387px] h-[272px] p-6 rounded-2xl">
+              <div class="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-xl mb-4">
+                  <span class="text-[#5b3df6] w-[60px] h-[60px] text-3xl flex items-center justify-center">
+                      <img src="./rocket.png" alt="" >
+                  </span>
+              </div>
+              <h3 class="font-semibold text-[24px] leading-8 text-[#18192f]" style="font-family: 'Inter', sans-serif;">Streamlined Workflows</h3>
+              <p class="font-medium text-[16px] leading-6 w-[331px] h-[116px]" style="font-family: 'Inter', sans-serif; color: #5F5F76;">
+                  Automate repetitive tasks and focus on high-impact work with our powerful productivity features.
+              </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="flex-1 bg-[#D8E0FC] w-[387px] h-[272px] p-6 rounded-2xl">
+              <div class="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-xl mb-4">
+                  <span class="text-[#5b3df6] w-[60px] h-[60px] text-3xl flex items-center justify-center">
+                      <img src="./blazing.png" alt="">
+                  </span>
+              </div>
+              <h3 class="font-semibold text-[24px] leading-8 text-[#18192f]" style="font-family: 'Inter', sans-serif;">Blazing Fast Performance</h3>
+              <p class="font-medium text-[16px] leading-6 w-[331px] h-[116px]" style="font-family: 'Inter', sans-serif; color: #5F5F76;">
+                  Experience lightning-fast performance and instant responsiveness with our cutting-edge technology.
+              </p>
+          </div>
+          <!-- Card 3 -->
+          <div class="flex-1 bg-[#E8DCF6] w-[387px] h-[272px] p-6 rounded-2xl">
+              <div class="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-xl mb-4">
+                  <span class="text-[#5b3df6] w-[60px] h-[60px] text-3xl flex items-center justify-center">
+                      <img src="./smile.png" alt="">
+                  </span>
+              </div>
+              <h3 class="font-semibold text-[24px] leading-8 text-[#18192f]" style="font-family: 'Inter', sans-serif;">Intuitive Interface</h3>
+              <p class="font-medium text-[16px] leading-6 w-[331px] h-[116px]" style="font-family: 'Inter', sans-serif; color: #5F5F76;">
+                  Our user-friendly interface makes it easy for anyone to streamline their workflow.
+              </p>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="min-h-screen flex flex-col justify-between">
+    <main class="flex justify-center items-center py-20">
+      <div class="bg-white rounded-2xl shadow-md p-10 w-full max-w-xl">
+        <h1 class="text-2xl font-semibold text-center mb-8">Get in Touch</h1>
+
+        <form class="space-y-5">
+          <div>
+            <label class="block mb-1 text-sm">Name</label>
+            <input type="text" placeholder="John Doe"
+              class="w-full px-4 py-2 rounded-lg border border-[#E0E0ED] p-3 hover:border-[#B5A9FF] focus:outline-none focus:border-[#5E44FF]" />
+          </div>
+
+          <div>
+            <label class="block mb-1 text-sm">Email</label>
+            <input type="email" placeholder="john@example.com"
+              class="w-full px-4 py-2 rounded-lg border border-[#E0E0ED] p-3 hover:border-[#B5A9FF] focus:outline-none focus:border-[#5E44FF]" />
+          </div>
+
+          <div>
+            <label class="block mb-1 text-sm">Message</label>
+            <textarea rows="4" placeholder="Your message..."
+              class="w-full px-4 py-2 rounded-lg border border-[#E0E0ED] p-3 hover:border-[#B5A9FF] focus:outline-none focus:border-[#5E44FF]"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full max-w-md bg-[#1A1A2C] text-white px-6 py-4 rounded-2xl block mx-auto hover:bg-[#5E44FF] focus:bg-[#35354D] focus:ring focus:ring-[#5F5F76]">Submit</button>
+        </form>
+      </div>
+    </main>
+    
+        <footer class="flex justify-center items-center px-4 sm:px-10 text-sm text-gray-500">
+          <div class="flex flex-col sm:flex-row justify-between items-center w-full max-w-[1199px] gap-y-4 sm:gap-y-0">
+          <div>Acme productivity app ©2024</div>
+          <div class="flex flex-wrap gap-x-4 gap-y-2">
+            <a href="#" class="hover:text-[#5E44FF] hover:underline">FAQ</a>
+            <a href="#" class="hover:text-[#5E44FF] hover:underline">Terms</a>
+            <a href="#" class="hover:text-[#5E44FF] hover:underline">AI Policy</a>
+            <a href="#" class="hover:text-[#5E44FF] hover:underline">Pricing</a>
+          </div>
+        </div>
+        </footer>
+
+</body>
+
 </html>
+
+
