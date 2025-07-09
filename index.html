@@ -2,12 +2,108 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme App</title>
+    <title>Acme Productivity App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="bg-[#F6F6FB] text-gray-900">
+    <!-- Navbar -->
+    <header class="bg-white mx-auto mt-4 rounded-full w-[95%] max-w-6xl py-4 px-8 flex justify-between items-center shadow-sm">
+      <img src="image/logo.png" class="w-[91.67px] h-[40px]" alt="Logo">
+      </div>
+      <nav class="space-x-8 text-m font-medium text-gray-700">
+        <a href="#" class="text-indigo-600 underline">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center mt-32">
+      <!-- Tag -->
+      <div class="inline-block bg-[#563aff1a] text-indigo-500 text-sm px-4 py-1 rounded-full shadow-sm mb-6 font-semibold">
+        🌈 Acme Productivity App
+      </div>
+
+      <!-- Heading -->
+      <h1 class="text-6xl font-extrabold leading-tight">
+        Boost Your <span class="text-indigo-500">Product<span class="text-black">ivity</span>
+        
+      </h1>
+
+      <!-- Subtext -->
+      <p class="mt-4 text-gray-700 text-lg font-bold">
+        Streamline your workflow with our all-in-one productivity app.
+      </p>
+
+      <!-- Button -->
+      <div class="mt-8">
+        <a href="#" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition">
+          Start Free Trial
+        </a>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="flex justify-center gap-8 mt-16">
+      <!-- Card 1 -->
+      <div class="bg-[#D7E5F6] rounded-2xl p-8 w-[350px] h-[240px] flex flex-col">
+        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-4 ">
+          <img src="image/rocket.png" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Streamlined Workflows</h3>
+        <p class="text-gray-700 text-sm">Automate repetitive tasks and focus on high-impact work with our powerful productivity features.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-[#dde3fd] rounded-2xl p-8 w-[350px] h-[240px] flex flex-col">
+        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-4">
+          <img src="image/Frame 427321229.png" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m4 0h-1v4h-1m-4 0h-1v-4h-1"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Blazing Fast Performance</h3>
+        <p class="text-gray-700 text-sm">Experience lightning-fast performance and instant responsiveness with our cutting-edge technology.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-[#ece6fa] rounded-2xl p-8 w-[350px] h-[240px] flex flex-col">
+        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-4">
+          <img src="image/Frame 427321229@2x.png" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Intuitive Interface</h3>
+        <p class="text-gray-700 text-sm">Our user-friendly interface makes it easy for anyone to streamline their workflow.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="flex justify-center items-center mt-20 mb-10">
+      <div class="bg-white rounded-3xl shadow-sm w-[90vw] max-w-5xl p-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-[#1A1A2C]">Get in Touch</h2>
+        <form class="max-w-2xl mx-auto flex flex-col gap-6">
+          <div>
+            <label class="block text-left text-gray-700 mb-1" for="name">Name</label>
+            <input id="name" type="text" placeholder="John Doe" class="w-full rounded-md border border-[#E0E0ED] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-100" />
+          </div>
+          <div>
+            <label class="block text-left text-gray-700 mb-1" for="email">Email</label>
+            <input id="email" type="email" placeholder="john@example.com" class="w-full rounded-md border border-[#E0E0ED] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-100" />
+          </div>
+          <div>
+            <label class="block text-left text-gray-700 mb-1" for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Your message..." class="w-full rounded-md border border-[#E0E0ED] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-100"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-[#1a1a2a] text-white py-3 rounded-xl font-medium text-lg mt-2 hover:bg-[#23233a] transition">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="flex justify-between items-center w-[90vw] max-w-5xl mx-auto pb-8 text-gray-600 text-sm">
+      <div>Acme productivity app ©2024</div>
+      <div class="space-x-8 font-bold">
+        <a href="#" class="hover:underline">FAQ</a>
+        <a href="#" class="hover:underline">Terms</a>
+        <a href="#" class="hover:underline">AI Policy</a>
+        <a href="#" class="hover:underline">Pricing</a>
+      </div>
+    </footer>
   </body>
 </html>
