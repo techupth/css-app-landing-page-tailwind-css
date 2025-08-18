@@ -6,8 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- Start Coding Here -->
-  </body>
+
+</head>
+  <body class="box-border m-0 p-0 font-['Inter',sans-serif] w-[1440px] h-[1024px] bg-[#F6F6FB]">
+    <!-- Navbar -->
+    <nav class="w-[1440px] h-[128px] p-[24px] gap-[10px]">
+        <div class="bg-white flex justify-between items-center w-[1392px] h-[80px] py-[12px] px-[80px] rounded-[99px] shadow-[0px_4px_20px_0px_#9379CA0D]">
+          <div class="logo">
+            <img src="/img/Logo.png" width="91.67px" height="40px" alt="logo">
+          </div>
+          <ul class="flex justify-between items-center w-[420px] h-[56px]">
+            <li>
+                <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Home</a>
+            </li>
+            <li>
+                <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Features</a>
+            </li>
+            <li>
+                <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Pricing</a>
+            </li>
+            <li>
+                <a href="#" class="text-[16px] font-[500px] leading-[24px] text-[#1a1a2c] hover:text-[#5E44FF] hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- Hero Section -->
+      <section class="w-[1440px] h-[968px] top-[128px] gap-[120px] pt-[120px] pr-[120px] pb-[140px] pl-[120px]">
+        <div class="w-[1200px] h-[316px] gap-[40px] flex flex-col justify-between items-center">
+          <div class="w-[236px] h-[40px] px-[20px] py-[8px] rounded-[999px] bg-[#563AFF1A]">
+            <p class="h-[24px] w-[196px] text-[16px] font-[16px] leading-[24px] text-center text-[#5E44FF]">🌈️ Acme Productivity App</p>
+          </div>
+          <div class="w-[1200px] h-[140px] gap-[24px] flex flex-col justify-center items-center">  
+            <h1 class="text-[80px] font-extrabold leading-[84px] tracking-[-5px] text-center text-[#1a1a2c]">Boost Your <span class="text-[#5E44FF]">Product</span>ivity</h1>
+            <h3 class="text-[24px] font-semibold leading-[32px] text-center text-[#1a1a2c]">Streamline your workflow with our all-in-one productivity app.</h3>
+          </div>
+          <button class="w-[187px] h-[56px] rounded-[16px] bg-[#1a1a2c] text-white py-[16px] px-[36px] gap-[6px] text-[16px] leading-[24px] font-semibold text-center cursor-pointer">Start Free Trial</button>
+        </div>
+      </section>
+
+  <div class="min-h-screen flex flex-col justify-between">
+    <main class="flex justify-center items-center py-20">
+      <div class="bg-white rounded-2xl shadow-md p-10 w-full max-w-xl">
+        <h1 class="text-2xl font-semibold text-center mb-8">Get in Touch</h1>
+
+        <form class="space-y-5">
+          <div>
+            <label class="block mb-1 text-sm">Name</label>
+            <input type="text" placeholder="John Doe"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+          </div>
+
+          <div>
+            <label class="block mb-1 text-sm">Email</label>
+            <input type="email" placeholder="john@example.com"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+          </div>
+
+          <div>
+            <label class="block mb-1 text-sm">Message</label>
+            <textarea rows="4" placeholder="Your message..."
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-[#181828] text-white py-2 rounded-lg hover:bg-black transition">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="flex justify-between items-center px-10 py-6 text-sm text-gray-500">
+      <div>Acme productivity app ©2024</div>
+      <div class="space-x-6">
+        <a href="#" class="hover:underline">FAQ</a>
+        <a href="#" class="hover:underline">Terms</a>
+        <a href="#" class="hover:underline">AI Policy</a>
+        <a href="#" class="hover:underline">Pricing</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
 </html>
+
+
