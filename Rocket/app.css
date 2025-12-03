@@ -1,0 +1,26 @@
+/* Gradient text on hover for navigation links (excluding Sign Up) */
+#menu li:not(:last-child) a:hover {
+  background: linear-gradient(to right, rgb(236, 72, 153), rgb(147, 51, 234));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Sign Up button - gradient text by default, darker on hover */
+.signup-link {
+  background: linear-gradient(to right, rgb(251, 113, 133), rgb(192, 132, 252));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.signup-link:hover {
+  background: linear-gradient(to right, rgb(236, 72, 153), rgb(147, 51, 234));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+

@@ -7,7 +7,282 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="bg-[#948BAD33]/20 font-['Inter'] min-h-screen">
+    <header
+      class="header-container w-full max-w-[1440px] h-[64px] [@media(min-width:376px)]:h-[128px] p-[12px] [@media(min-width:376px)]:p-[24px] gap-[10px] flex justify-center items-center fixed top-0 left-1/2 -translate-x-1/2 z-[1000]"
+    >
+      <nav
+        class="nav-container w-full max-w-[375px] [@media(min-width:376px)]:w-full [@media(min-width:376px)]:max-w-[1200px] h-[48px] [@media(min-width:376px)]:h-[80px] rounded-[24px] [@media(min-width:376px)]:rounded-[99px] flex justify-between items-center pt-[8px] [@media(min-width:376px)]:pt-[12px] pb-[8px] [@media(min-width:376px)]:pb-[12px] pl-[16px] [@media(min-width:376px)]:pl-[24px] pr-[16px] [@media(min-width:376px)]:pr-[24px] bg-white shadow-[0px_4px_20px_0px_\#9379CA0D]"
+      >
+        <div
+          class="logo-container w-[70px] [@media(min-width:376px)]:w-[91.67px] h-[32px] [@media(min-width:376px)]:h-[40px] text-center"
+        >
+          <div
+            class="logo w-[66px] [@media(min-width:376px)]:w-[88.33px] h-[18px] [@media(min-width:376px)]:h-[22.32px] relative"
+          >
+            <div
+              class="circle w-[5px] [@media(min-width:376px)]:w-[7.33px] h-[5px] [@media(min-width:376px)]:h-[7.33px] bg-[#5E44FF] rounded-[50%] absolute top-[6px] [@media(min-width:376px)]:top-[8px] right-[-2px]"
+            ></div>
+            <div
+              class="logo-text w-[60px] [@media(min-width:376px)]:w-[80.89px] h-[18px] [@media(min-width:376px)]:h-[22.32px] text-[#1A1A2C] absolute text-2xl [@media(min-width:376px)]:text-3xl font-bold left-[4px] [@media(min-width:376px)]:left-[6px]"
+            >
+              Acme
+            </div>
+          </div>
+        </div>
+        <div
+          class="link-container h-[32px] [@media(min-width:376px)]:h-[56px] hidden [@media(min-width:376px)]:flex gap-[8px] [@media(min-width:376px)]:gap-[24px] items-center"
+        >
+          <a href="#" class="home-container h-[56px] flex items-center">
+            <div
+              class="home w-[46px] h-[24px] font-medium text-base text-center text-[#5E44FF] underline"
+            >
+              Home
+            </div>
+          </a>
+          <a href="#" class="feature-container h-[56px] flex items-center">
+            <div
+              class="feature w-[67px] h-[24px] font-medium text-base text-center text-[#1A1A2C]"
+            >
+              Features
+            </div>
+          </a>
+          <a href="#" class="price-container h-[56px] flex items-center">
+            <div
+              class="price w-[53px] h-[24px] font-medium text-base text-center text-[#1A1A2C]"
+            >
+              Pricing
+            </div>
+          </a>
+          <a href="#" class="contact-container h-[56px] flex items-center">
+            <div
+              class="contact w-[62px] h-[24px] font-medium text-base text-center text-[#1A1A2C]"
+            >
+              Contact
+            </div>
+          </a>
+        </div>
+        <button
+          class="hamburger-menu [@media(min-width:376px)]:hidden w-[24px] h-[24px] flex flex-col justify-center items-center gap-[4px]"
+          aria-label="Menu"
+        >
+          <div class="w-full h-[2px] bg-[#1A1A2C] rounded"></div>
+          <div class="w-full h-[2px] bg-[#1A1A2C] rounded"></div>
+          <div class="w-full h-[2px] bg-[#1A1A2C] rounded"></div>
+        </button>
+      </nav>
+    </header>
+
+    <section
+      class="section-one mt-[64px] [@media(min-width:376px)]:mt-[128px] mb-[64px] [@media(min-width:376px)]:mb-[128px] w-full max-w-[1440px] mx-auto min-h-[400px] [@media(min-width:376px)]:h-[484px] top-[64px] [@media(min-width:376px)]:top-[128px] pt-[40px] [@media(min-width:376px)]:pt-[120px] pr-[16px] [@media(min-width:376px)]:pr-[120px] pb-[60px] [@media(min-width:376px)]:pb-[140px] pl-[16px] [@media(min-width:376px)]:pl-[120px] gap-[32px] [@media(min-width:376px)]:gap-[120px] flex flex-col"
+    >
+      <div
+        class="hero-section w-full max-w-[1200px] mx-auto min-h-[300px] [@media(min-width:376px)]:h-[316px] gap-[24px] [@media(min-width:376px)]:gap-[40px] flex flex-col items-center"
+      >
+        <div
+          class="tag-container w-full max-w-[280px] [@media(min-width:376px)]:w-[236px] h-[36px] [@media(min-width:376px)]:h-[40px] rounded-[999px] pt-[6px] [@media(min-width:376px)]:pt-[8px] pb-[6px] [@media(min-width:376px)]:pb-[8px] pr-[16px] [@media(min-width:376px)]:pr-[20px] pl-[16px] [@media(min-width:376px)]:pl-[20px] bg-[#563AFF1A]"
+        >
+          <div
+            class="tag-name w-full h-[20px] [@media(min-width:376px)]:h-[24px] font-medium text-sm [@media(min-width:376px)]:text-base text-[#5E44FF] text-center"
+          >
+            🌈️ Acme Productivity App
+          </div>
+        </div>
+        <div
+          class="description-container w-full max-w-[1200px] mx-auto min-h-[200px] [@media(min-width:376px)]:h-[140px] gap-[16px] [@media(min-width:376px)]:gap-[24px] flex flex-col items-center"
+        >
+          <h1
+            class="w-full min-h-[120px] [@media(min-width:376px)]:h-[84px] font-extrabold text-[32px] [@media(min-width:376px)]:text-[80px] leading-[40px] [@media(min-width:376px)]:leading-[84px] text-center px-[8px]"
+          >
+            Boost Your <span class="text-[#5E44FF]">Product</span>ivity
+          </h1>
+          <h3
+            class="w-full min-h-[48px] [@media(min-width:376px)]:h-[32px] font-semibold text-[16px] [@media(min-width:376px)]:text-[24px] leading-[24px] [@media(min-width:376px)]:leading-8 text-center text-[#1A1A2C] px-[8px]"
+          >
+            Streamline your workflow with our all-in-one productivity app.
+          </h3>
+        </div>
+        <button
+          class="free-trial-btn w-full max-w-[280px] [@media(min-width:376px)]:w-[187px] h-[48px] [@media(min-width:376px)]:h-[56px] rounded-[16px] pt-[12px] [@media(min-width:376px)]:pt-[16px] pr-[24px] [@media(min-width:376px)]:pr-[36px] pb-[12px] [@media(min-width:376px)]:pb-[16px] pl-[24px] [@media(min-width:376px)]:pl-[36px] gap-[6px] bg-[#1A1A2C]"
+        >
+          <div
+            class="text-btn w-full h-[24px] font-semibold text-sm [@media(min-width:376px)]:text-base text-white text-center"
+          >
+            Start Free Trial
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="w-full max-w-[1201px] mx-auto min-h-[800px] [@media(min-width:376px)]:h-[272px] flex flex-col [@media(min-width:376px)]:flex-row gap-[16px] [@media(min-width:376px)]:gap-[20px] mb-[64px] [@media(min-width:376px)]:mb-[128px] px-[16px] [@media(min-width:376px)]:px-0"
+    >
+      <!-- Card 1: Streamlined Workflows -->
+      <article
+        class="w-full [@media(min-width:376px)]:w-[387px] min-h-[240px] [@media(min-width:376px)]:h-[272px] rounded-[24px] p-[20px] [@media(min-width:376px)]:p-[28px] flex flex-col gap-[24px] [@media(min-width:376px)]:gap-[40px] bg-[#D7E5F6]"
+      >
+        <div
+          class="bg-white rounded-lg w-[50px] [@media(min-width:376px)]:w-[60px] h-[50px] [@media(min-width:376px)]:h-[60px] flex items-center justify-center"
+        >
+          <img
+            src="Rocket/Picture/Rocket.svg"
+            alt="Rocket icon representing streamlined workflows"
+            class="w-6 [@media(min-width:376px)]:w-8 h-6 [@media(min-width:376px)]:h-8"
+          />
+        </div>
+        <div
+          class="w-full [@media(min-width:376px)]:w-[331px] min-h-[100px] [@media(min-width:376px)]:h-[116px]"
+        >
+          <h2
+            class="text-lg [@media(min-width:376px)]:text-xl font-bold text-gray-900 mb-2"
+          >
+            Streamlined Workflows
+          </h2>
+          <p
+            class="text-sm [@media(min-width:376px)]:text-md text-gray-500 leading-relaxed"
+          >
+            Automate repetitive tasks and focus on high-impact work with our
+            powerful productivity features.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 2: Blazing Fast Performance -->
+      <article
+        class="w-full [@media(min-width:376px)]:w-[387px] min-h-[240px] [@media(min-width:376px)]:h-[272px] rounded-[24px] p-[20px] [@media(min-width:376px)]:p-[28px] flex flex-col gap-[24px] [@media(min-width:376px)]:gap-[40px] bg-[#D8E0FC]"
+      >
+        <div
+          class="bg-white rounded-lg w-[50px] [@media(min-width:376px)]:w-[60px] h-[50px] [@media(min-width:376px)]:h-[60px] flex items-center justify-center"
+        >
+          <img
+            src="Rocket/Picture/Pot.svg"
+            alt="Chart icon representing blazing fast performance"
+            class="w-6 [@media(min-width:376px)]:w-8 h-6 [@media(min-width:376px)]:h-8"
+          />
+        </div>
+        <div
+          class="w-full [@media(min-width:376px)]:w-[331px] min-h-[100px] [@media(min-width:376px)]:h-[116px]"
+        >
+          <h2
+            class="text-lg [@media(min-width:376px)]:text-xl font-bold text-gray-900 mb-2"
+          >
+            Blazing Fast Performance
+          </h2>
+          <p
+            class="text-gray-500 text-sm [@media(min-width:376px)]:text-md leading-relaxed"
+          >
+            Experience lightning-fast performance and instant responsiveness
+            with our cutting-edge technology.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 3: Intuitive Interface -->
+      <article
+        class="w-full [@media(min-width:376px)]:w-[387px] min-h-[240px] [@media(min-width:376px)]:h-[272px] rounded-[24px] p-[20px] [@media(min-width:376px)]:p-[28px] flex flex-col gap-[24px] [@media(min-width:376px)]:gap-[40px] bg-[#E8DCF6]"
+      >
+        <div
+          class="bg-white rounded-lg w-[50px] [@media(min-width:376px)]:w-[60px] h-[50px] [@media(min-width:376px)]:h-[60px] flex items-center justify-center"
+        >
+          <img
+            src="Rocket/Picture/Smile.svg"
+            alt="Smile icon representing intuitive interface"
+            class="w-6 [@media(min-width:376px)]:w-8 h-6 [@media(min-width:376px)]:h-8"
+          />
+        </div>
+        <div
+          class="w-full [@media(min-width:376px)]:w-[331px] min-h-[100px] [@media(min-width:376px)]:h-[116px]"
+        >
+          <h2
+            class="text-lg [@media(min-width:376px)]:text-xl font-bold text-gray-900 mb-2"
+          >
+            Intuitive Interface
+          </h2>
+          <p
+            class="text-gray-500 text-sm [@media(min-width:376px)]:text-md leading-relaxed"
+          >
+            Our user-friendly interface makes it easy for anyone to streamline
+            their workflow.
+          </p>
+        </div>
+      </article>
+    </section>
+
+
+      <!-- input-form/pong -->
+       <section
+        class="flex mx-auto w-full max-w-[375px] h-[838px] flex-col items-center justify-between gap-10 font-['Inter'] px-6 pb-10 pt-10 md:max-w-[1440px] md:h-auto md:gap-[80px] md:px-[120px] md:pb-[80px] md:pt-[80px]"
+    >
+      <div
+          class="flex w-full flex-col rounded-3xl bg-white px-6 py-10 text-center shadow-sm md:h-[666px] md:max-w-[1199px] md:px-[120px] md:py-[80px]"
+      >
+          <header class="mb-12 mx-auto w-full max-w-3xl">
+            <h1 class="text-5xl font-semibold text-[#1A1A2C]">Get in Touch</h1>
+        </header>
+        <form
+            class="w-full max-w-[327px] mx-auto space-y-6 md:max-w-3xl"
+          aria-label="Contact form"
+        >
+          <article class="text-left">
+            <label
+              for="name"
+              class="mb-2 block text-sm font-medium text-slate-600"
+              >Name</label
+            >
+            <input
+              id="name"
+              type="text"
+              placeholder="John Doe"
+                class="w-full rounded-xl border border-[#E0E0ED] px-3 py-3 text-slate-800 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-[#5E44FF]/30 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
+            />
+          </article>
+          <article class="text-left">
+            <label
+              for="email"
+              class="mb-2 block text-sm font-medium text-slate-600"
+              >Email</label
+            >
+            <input
+              id="email"
+              type="email"
+              placeholder="john@example.com"
+                class="w-full rounded-xl border border-[#E0E0ED] px-3 py-3 text-slate-800 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-[#5E44FF]/30 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
+            />
+          </article>
+          <article class="text-left">
+            <label
+              for="message"
+              class="mb-2 block text-sm font-medium text-slate-600"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Your message..."
+                class="w-full rounded-xl border border-[#E0E0ED] px-3 py-3 text-slate-800 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-[#5E44FF]/30 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
+            ></textarea>
+          </article>
+          <button
+            type="submit"
+              class="mx-auto w-full rounded-2xl bg-[#1A1A2C] px-9 py-4 text-base font-medium text-white transition hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-2 focus:ring-[#5F5F76] md:w-[589px]"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <footer
+          class="flex w-full max-w-[375px] flex-col items-center justify-between gap-4 text-sm text-slate-600 mx-auto md:max-w-[1199px] md:flex-row"
+      >
+        <p>Acme productivity app ©2024</p>
+        <nav aria-label="Secondary navigation">
+            <ul class="flex gap-8 font-bold">
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">FAQ</a></li>
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">Terms</a></li>
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">AI Policy</a></li>
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">Pricing</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
   </body>
 </html>
