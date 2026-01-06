@@ -7,7 +7,128 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
-  </body>
+  <!-- Dev 1 -->
+  <body class="bg-gray-100">
+    <nav
+      class="flex justify-between items-center m-6 px-20 py-3 rounded-full bg-white shadow-lg shadow-[#9379CA0D]"
+    >
+      <img class="logo h-6" src="./image/logo.png" alt="logo" />
+      <section class="button-section flex gap-12">
+        <a href="" class="hover:underline hover:text-[#5E44FF]">Home</a>
+        <a href="" class="hover:underline hover:text-[#5E44FF]">Features</a>
+        <a href="" class="hover:underline hover:text-[#5E44FF]">Pricing</a>
+        <a href="" class="hover:underline hover:text-[#5E44FF]">Contact</a>
+      </section>
+    </nav>
+    <main>
+      <section class="hero-section flex flex-col items-center gap-6 mt-28">
+        <div
+          class="app-title text-[#5E44FF] font-medium bg-[#563AFF1A] w-max px-5 py-2 rounded-full"
+        >
+          🌈 Acme Productivity App
+        </div>
+        <h1 class="text-[80px] font-bold">
+          Boost Your <span class="product text-[#5E44FF]">Product</span>ivity
+        </h1>
+        <h3 class="text-2xl font-semibold">
+          Streamline your workflow with our all-in-one productivity app.
+        </h3>
+        <button
+          class="text-white font-semibold bg-[#1A1A2C] w-max px-9 py-4 rounded-2xl mt-4"
+        >
+          Start Free Trial
+        </button>
+  
+      <!-- Dev 2 -->
+        <section class="font-inter flex justify-center items-center mt-20">
+        <div
+          class="features-selection flex flex-row items-center justify-between gap-[20px] w-[1201px] h-[272px] m-[0px auto] p-[0px]"
+        >
+          <div
+            class="features-selection-box1 bg-[#D7E5F6] rounded-[24px] w-[387px] h-[262px] m-"
+          >
+            <img
+              src="./Feature-emoji/Asset1.png"
+              alt="rocket-emoji"
+              class="w-[56px] h-[56px] m-[40px_15px_0px_20px] p-[14px] bg-white rounded-[16px]"
+            />
+            <h3 class="features-selection-title text-[24px] font-[600] m-4">
+              Streamlined Workflows
+            </h3>
+            <p
+              class="features-selection-description text-[#5F5F76] text-[16px] font-[500] m-4"
+            >
+              Automate repetitive tasks and focus on high-impact work with our
+              powerful productivity features.
+            </p>
+          </div>
+          <div
+            class="features-selection-box2 bg-[#D8E0FC] rounded-[24px] w-[387px] h-[262px]"
+          >
+            <img
+              src="./Feature-emoji/Asset2.png"
+              alt="graph-emoji"
+              class="w-[56px] h-[56px] m-[40px_15px_0px_20px] p-[14px] bg-white rounded-[16px]"
+            />
+            <h3 class="features-selection-title text-[24px] font-[600] m-4">
+              Blazing Fast Performance
+            </h3>
+            <p
+              class="features-selection-description text-[#5F5F76] text-[16px] font-[500] m-4"
+            >
+              Experience lightning-fast performance and instant responsiveness
+              with our cutting-edge technology.
+            </p>
+          </div>
+          <div
+            class="features-selection-box3 bg-[#E8DCF6] rounded-[24px] w-[387px] h-[262px]"
+          >
+            <img
+              src="./Feature-emoji/Asset3.png"
+              alt="smile-emoji"
+              class="w-[56px] h-[56px] m-[40px_15px_0px_20px] p-[14px] bg-white rounded-[16px]"
+            />
+            <h3 class="features-selection-title text-[24px] font-[600] m-4">
+              Intuitive Interface
+            </h3>
+            <p
+              class="features-selection-description text-[#5F5F76] text-[16px] font-[500] m-4"
+            >
+              Our user-friendly interface makes it easy for anyone to streamline
+              their workflow.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dev 3 -->
+      <section class="flex flex-col items-center w-[1439px] h-[850px] mx-auto pr-[120px] pb-[80px] pl-[120px]">
+          <div class="flex flex-col items-center rounded-3xl border border-white pt-[80px] pr-[120px] pb-[80px] pl-[120px] gap-[40px] w-[1199px] h-[666px]">
+            <h1 class="text-[44px] font-bold">Get in Touch</h1>
+            <form class="w-[589px] h-[322px] flex flex-col ">
+              <div class="flex flex-col items-start w-[589px] h-[78]">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="John Doe" class="flex flex-col mb-[30px] pt-[12px] pr-[12px] pb-[12px] pl-[16px] border border-[#E0E0ED] rounded-[12px] w-[589px] h-[48px]">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="john@example.com" class="flex flex-col mb-[30px] pt-[12px] pr-[12px] pb-[12px] pl-[16px] border border-#E0E0ED rounded-[12px] w-[589px] h-[48px]">
+                <div class="h-[130px] w-[589px]">
+                  <label for="message"> Message </label><br>
+                  <textarea id="message" placeholder="Your messaage" rows="5" class="flex flex-col mb-[6px] pt-[12px] pr-[12px] pb-[12px] pl-[16px] border border-[#E0E0ED] rounded-[12px] w-[589px] h-[102px]" ></textarea>
+                </div>
+              </div>
+              <button type="email flex items-end" class="flex flex-row justify-center gap-[6px] w-[589px] h-[56px] rounded-[16px] px-[36px] py-[16px] bg-[#1A1A2C] text-white mt-[30px]">Submit</button>
+            </form>
+          </div>
+          <footer class="w-[1199px] h-[24px] flex flex-row justify-between mt-[100px]">
+            <span>Acme productivity app ©2024</span>
+            <div class="font-bold flex flex-row gap-[37px]">
+              <span>FAQ</span>
+              <span>Terms</span>
+              <span>AI Policy</span>
+              <span>Pricing</span>
+            </div>
+          </footer>
+        </section>
+    </main>
+    <footer></footer>
 </html>
