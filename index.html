@@ -7,7 +7,195 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body>
-    <!-- Start Coding Here -->
+    <section
+      class="navbar max-w-screen bg-[#f6f6fb] py-[24px] px-[24px] justify-center hidden md:flex"
+    >
+      <div
+        class="container flex flex-row justify-between items-center bg-white py-[12px] px-[80px] rounded-[99px] max-w-100 fixed w-11/12"
+      >
+        <div class="logo-icon">
+          <img src="img/logo.png" alt="Acme-logo" />
+        </div>
+
+        <nav class="nav-wrapper flex">
+          <a href="#" class="py-[16px] px-[24px] gap-[10px]">Home</a>
+          <a href="#" class="py-[16px] px-[24px] gap-[10px]">Features</a>
+          <a href="#" class="py-[16px] px-[24px] gap-[10px]">Pricing</a>
+          <a href="#" class="py-[16px] px-[24px] gap-[10px]">Contact</a>
+        </nav>
+      </div>
+    </section>
+
+    <section
+      class="herosection max-w-screen bg-[#f6f6fb] py-[120px] px-[120px] justify-center items-center"
+    >
+      <div
+        class="hero-container flex flex-col justify-center items-center gap-[40px]"
+      >
+        <span class="flex md:hidden logo-icon justify-center items-center mb-2">
+          <img src="img/logo.png" alt="Acme-logo" class="h-20" />
+        </span>
+        <div
+          class="tag px-[20px] py-[8px] bg-[#563AFF]/10 text-[#5e44FF] rounded-[16px] hidden md:flex"
+        >
+          <p class="font-tag">🌈️ Acme Productivity App</p>
+        </div>
+
+        <div
+          class="frame flex-col justify-center items-center gap-[24px] hidden md:flex"
+        >
+          <h1 class="text-[80px] leading-[84px] font-bold hidden md:flex">
+            Boost Your <span class="text-[#5e44FF]">Product</span>ivity
+          </h1>
+          <h3 class="text-[24px] leading-[32px] font-bold">
+            Streamline your workflow with our all-in-one productivity app.
+          </h3>
+        </div>
+
+        <button
+          class="px-[36px] py-[16px] bg-neutral-950 text-white rounded-[16px]"
+        >
+          Start Free Trial
+        </button>
+      </div>
+    </section>
+
+    <div
+      class="bg-[#f6f6fb] max-h-screen min-h-96 flex items-center justify-center w-full"
+    >
+      <section class="w-10/12 max-w-6xl">
+        <div
+          class="gap-6 flex flex-col md:flex-row justify-center items-center"
+        >
+          <!-- Card 1 -->
+          <article class="bg-[#D7E5F6] p-8 rounded-3xl">
+            <div
+              class="bg-white w-10 h-10 rounded-xl flex items-center justify-center mb-6 text-lg"
+            >
+              <img src="img/rocket.png" alt="rocket" />
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-3 text-gray-900">
+              Streamlined Workflows
+            </h3>
+
+            <p class="text-in text-gray-600 leading-relaxed">
+              Automate repetitive tasks and focus on high-impact work with our
+              powerful productivity features.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="bg-[#d8e0fc] p-8 rounded-3xl">
+            <div
+              class="bg-white w-10 h-10 rounded-xl flex items-center justify-center mb-6 text-lg"
+            >
+              <img src="img/board.png" alt="board" />
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-3 text-gray-900">
+              Blazing Fast Performance
+            </h3>
+
+            <p class="text-in text-gray-600 leading-relaxed">
+              Experience lightning-fast performance and instant responsiveness
+              with our cutting-edge technology.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="bg-[#e7dcf6] p-8 rounded-3xl">
+            <div
+              class="bg-white w-10 h-10 rounded-xl flex items-center justify-center mb-6 text-lg"
+            >
+              <img src="img/smile.png" alt="smile" />
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-3 text-gray-900">
+              Intuitive Interface
+            </h3>
+
+            <p class="text-in text-gray-600 leading-relaxed">
+              Our user-friendly interface makes it easy for anyone to streamline
+              their workflow.
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="flex flex-col justify-center items-center pt-40 pb-16 px-4 bg-[#f6f6fb]"
+    >
+      <section
+        class="flex flex-col items-center bg-white rounded-2xl px-8 py-10 w-full max-w-5xl"
+      >
+        <h2
+          class="text-5xl font-bold text-center mb-8 bg-white w-full text-[#1A1A2C]"
+        >
+          Get in Touch
+        </h2>
+
+        <form
+          class="flex flex-col w-full text-gray-400 bg-white py-10 gap-4 md:px-40"
+        >
+          <label for="name" class="bg-white self-start w-full">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="John Doe"
+            class="border border-[#E0E0ED] rounded-md bg-white w-full h-12 pl-4 hover:border-[#B5A9FF] focux:border-[#5E44FF]"
+          />
+          <label for="password" class="bg-white self-start w-full"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            placeholder="John@example.com"
+            class="border rounded-md bg-white w-full h-12 pl-4 hover:border-[#B5A9FF] focux:border-[#5E44FF]"
+          />
+          <label for="message" class="bg-white self-start w-full"
+            >Message</label
+          >
+          <input
+            type="text"
+            id="message"
+            placeholder="Your Message..."
+            class="border rounded-md bg-white w-full h-36 pl-4 hover:border-[#B5A9FF] focux:border-[#5E44FF]"
+          />
+
+          <button
+            type="submit"
+            class="bg-black text-white px-4 py-2 rounded-2xl mt-4 font-bold"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <div
+        class="flex justify-between items-end gap-4 px-4 mt-8 font-bold w-full md:hidden"
+      >
+        <a href="#">FAQ</a>
+        <a href="#">Terms</a>
+        <a href="#">AI Policy</a>
+        <a href="#">Princing</a>
+      </div>
+
+      <footer
+        class="flex-row justify-between items-center w-full bottom-0 pt-32 hidden md:flex"
+      >
+        <p class="px-16">Acme productivity app ©2024 </p>
+        <div class="flex justify-between items-end gap-8 px-16 font-bold">
+          <a href="#">FAQ</a>
+          <a href="#">Terms</a>
+          <a href="#">AI Policy</a>
+          <a href="#">Princing</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
