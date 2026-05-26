@@ -2,12 +2,150 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme App</title>
+    <meta
+      name="description"
+      content="Acme Productivity App — streamline your workflow with our all-in-one productivity solution."
+    />
+    <title>Acme — Boost Your Productivity</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                dark: "#1A1A2E",
+                accent: "#6366F1",
+              },
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+
+  <body class="min-h-screen bg-[#F8F8FD] font-sans text-slate-900 antialiased">
+    <!-- Dev2 Feature Section -->
+    <section class="bg-[#f5f5fa] rounded-3xl p-16 mx-10 my-10">
+      <div class="flex gap-8 justify-center">
+        <div class="bg-[#dfe7f4] p-8 rounded-3xl w-[300px]">
+          <div class="bg-white w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+            🚀
+          </div>
+
+          <h3 class="text-3xl font-bold mb-4">Streamlined Workflows</h3>
+
+          <p class="text-gray-600 leading-relaxed">
+            Automate repetitive tasks and focus on high-impact work.
+          </p>
+        </div>
+
+        <div class="bg-[#dfe2ff] p-8 rounded-3xl w-[300px]">
+          <div class="bg-white w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+            ⚡
+          </div>
+
+          <h3 class="text-3xl font-bold mb-4">Blazing Fast Performance</h3>
+
+          <p class="text-gray-600 leading-relaxed">
+            Experience lightning-fast performance and instant responsiveness.
+          </p>
+        </div>
+
+        <div class="bg-[#efe0ff] p-8 rounded-3xl w-[300px]">
+          <div class="bg-white w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+            😊
+          </div>
+
+          <h3 class="text-3xl font-bold mb-4">Intuitive Interface</h3>
+
+          <p class="text-gray-600 leading-relaxed">
+            User-friendly interface for streamlined workflow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dev3 Contact Section + Footer -->
+    <section id="contact" class="px-4 pb-12 pt-4 sm:px-6 sm:pb-16 lg:px-8">
+      <div class="mx-auto max-w-4xl">
+        <article class="rounded-3xl bg-white px-6 py-12 shadow-sm sm:px-12 sm:py-16">
+          <h2 class="text-center text-2xl font-bold text-brand-dark sm:text-3xl">
+            Get in Touch
+          </h2>
+
+          <form class="mx-auto mt-10 max-w-lg space-y-6" action="#" method="post">
+            <div>
+              <label for="name" class="mb-1.5 block text-sm text-gray-500">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Doe"
+                required
+                class="w-full rounded-lg border border-gray-200 px-4 py-3 text-slate-900 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="mb-1.5 block text-sm text-gray-500">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+                class="w-full rounded-lg border border-gray-200 px-4 py-3 text-slate-900 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="mb-1.5 block text-sm text-gray-500">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your message..."
+                required
+                class="w-full resize-y rounded-lg border border-gray-200 px-4 py-3 text-slate-900 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full rounded-lg bg-brand-dark py-3.5 text-sm font-bold text-white hover:bg-slate-800"
+            >
+              Submit
+            </button>
+          </form>
+        </article>
+
+        <footer class="mt-8 flex items-center justify-between px-2 text-sm">
+          <p class="text-gray-500">Acme productivity app ©2024</p>
+
+          <nav>
+            <ul class="flex items-center gap-8">
+              <li><a href="#faq" class="font-bold text-brand-dark">FAQ</a></li>
+              <li><a href="#terms" class="font-bold text-brand-dark">Terms</a></li>
+              <li><a href="#ai-policy" class="font-bold text-brand-dark">AI Policy</a></li>
+              <li><a href="#pricing" class="font-bold text-brand-dark">Pricing</a></li>
+            </ul>
+          </nav>
+        </footer>
+      </div>
+    </section>
   </body>
 </html>
