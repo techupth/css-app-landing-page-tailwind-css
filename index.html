@@ -2,12 +2,228 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme App</title>
+    <meta
+      name="description"
+      content="Acme Productivity App — streamline your workflow with our all-in-one productivity solution."
+    />
+    <title>Acme — Boost Your Productivity</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                dark: "#1A1A2E",
+                accent: "#6366F1",
+              },
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+
+      <!-- ============================================================
+           Dev 1: Hero Section + Navbar
+           ============================================================ -->
+  <body class="min-h-screen bg-[#F8F8FD] font-sans text-slate-900 antialiased">
+  <header class="mx-auto mt-6 max-w-7xl px-4 w-full">
+    <nav class="flex items-center justify-between rounded-full border border-slate-200 bg-white px-8 py-4 shadow-sm">
+      <div class="text-2xl font-bold text-brand-dark">Acme<span class="text-brand-accent">.</span></div>
+      <div class="flex gap-8 text-sm font-medium text-slate-600">
+        <a href="#" class="text-brand-accent underline underline-offset-4">Home</a>
+        <a href="#" class="transition hover:text-brand-accent">Features</a>
+        <a href="#" class="transition hover:text-brand-accent">Pricing</a>
+        <a href="#" class="transition hover:text-brand-accent">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="flex flex-col items-center justify-center px-4 pt-32 pb-24 text-center">
+      <div class="mb-6 rounded-full bg-indigo-100 px-4 py-1 text-sm font-medium text-brand-accent">
+        🌈 Acme Productivity App
+      </div>
+
+      <h1 class="mb-6 text-6xl font-extrabold tracking-tight text-brand-dark">
+        Boost Your <span class="text-brand-accent">Product</span>ivity
+      </h1>
+
+      <p class="mb-10 max-w-7xl text-lg text-slate-500">
+        Streamline your workflow with our all-in-one productivity app.
+      </p>
+
+      <button class="rounded-xl bg-brand-dark px-8 py-3.5 font-semibold text-white transition hover:bg-slate-800">
+        Start Free Trial
+      </button>
+    </section>
+
+        <!-- Dev2 Feature Section -->
+        <section class="bg-[#f5f5fa] rounded-3xl p-16 mx-10 my-10">
+          <div class="flex gap-8 justify-center">
+            <div class="bg-[#dfe7f4] p-8 rounded-3xl w-[300px]">
+              <div class="bg-white w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                🚀
+              </div>
+    
+              <h3 class="text-3xl font-bold mb-4">Streamlined Workflows</h3>
+    
+              <p class="text-gray-600 leading-relaxed">
+                Automate repetitive tasks and focus on high-impact work.
+              </p>
+            </div>
+    
+            <div class="bg-[#dfe2ff] p-8 rounded-3xl w-[300px]">
+              <div class="bg-white w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                ⚡
+              </div>
+    
+              <h3 class="text-3xl font-bold mb-4">Blazing Fast Performance</h3>
+    
+              <p class="text-gray-600 leading-relaxed">
+                Experience lightning-fast performance and instant responsiveness.
+              </p>
+            </div>
+    
+            <div class="bg-[#efe0ff] p-8 rounded-3xl w-[300px]">
+              <div class="bg-white w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                😊
+              </div>
+    
+              <h3 class="text-3xl font-bold mb-4">Intuitive Interface</h3>
+    
+              <p class="text-gray-600 leading-relaxed">
+                User-friendly interface for streamlined workflow.
+              </p>
+            </div>
+          </div>
+        </section>
+
+  <body class="min-h-screen bg-[#F8F8FD] font-sans text-slate-900 antialiased">
+      <!-- ============================================================
+           Dev 3: Contact Section + Footer
+           ============================================================ -->
+           <section id="contact" class="px-4 pb-12 pt-4 sm:px-6 sm:pb-16 lg:px-8">
+            <div class="mx-auto max-w-4xl">
+              <!-- Contact card -->
+              <article class="rounded-3xl bg-white px-6 py-12 shadow-sm sm:px-12 sm:py-16">
+                <h2 class="text-center text-5xl font-bold text-[#1A1A2C] sm:text-3xl">
+                  Get in Touch
+                </h2>
+    
+                <form
+                  class="mx-auto mt-10 max-w-lg space-y-6"
+                  action="#"
+                  method="post"
+                  aria-label="Contact form"
+                >
+                  <!-- Name -->
+                  <div>
+                    <label for="name" class="mb-1.5 block text-sm text-gray-500">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="John Doe"
+                      required
+                      class="w-full rounded-lg border border-[#E0E0ED] p-3 text-slate-900 placeholder:text-gray-400 transition-colors hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none"
+                    />
+                  </div>
+    
+                  <!-- Email -->
+                  <div>
+                    <label for="email" class="mb-1.5 block text-sm text-gray-500">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="john@example.com"
+                      required
+                      class="w-full rounded-lg border border-[#E0E0ED] p-3 text-slate-900 placeholder:text-gray-400 transition-colors hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none"
+                    />
+                  </div>
+    
+                  <!-- Message -->
+                  <div>
+                    <label for="message" class="mb-1.5 block text-sm text-gray-500">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Your message..."
+                      required
+                      class="w-full resize-y rounded-lg border border-[#E0E0ED] p-3 text-slate-900 placeholder:text-gray-400 transition-colors hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none"
+                    ></textarea>
+                  </div>
+    
+                  <!-- Submit -->
+                  <button
+                    type="submit"
+                    class="mx-auto block w-[589px] max-w-full rounded-2xl bg-[#1A1A2C] px-9 py-4 text-sm font-bold text-white transition-colors hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-2 focus:ring-[#5F5F76]"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </article>
+    
+              <!-- Footer -->
+              <footer
+                class="mt-8 flex flex-col items-center justify-between gap-4 px-2 text-sm sm:flex-row sm:items-center"
+              >
+                <p class="text-gray-500">Acme productivity app ©2024</p>
+    
+                <nav aria-label="Footer navigation">
+                  <ul class="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
+                    <li>
+                      <a
+                        href="#faq"
+                        class="font-bold text-brand-dark transition-colors hover:text-indigo-600 focus:outline-none focus-visible:text-indigo-600"
+                      >
+                        FAQ
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#terms"
+                        class="font-bold text-brand-dark transition-colors hover:text-indigo-600 focus:outline-none focus-visible:text-indigo-600"
+                      >
+                        Terms
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#ai-policy"
+                        class="font-bold text-brand-dark transition-colors hover:text-indigo-600 focus:outline-none focus-visible:text-indigo-600"
+                      >
+                        AI Policy
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#pricing"
+                        class="font-bold text-brand-dark transition-colors hover:text-indigo-600 focus:outline-none focus-visible:text-indigo-600"
+                      >
+                        Pricing
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </footer>
+            </div>
+          </section>
   </body>
 </html>
