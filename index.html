@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,220 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="bg-[#F6F6FB] text-slate-900">
+    <div class="mx-auto max-w-[1280px] px-4 py-6 md:px-8">
+      <header
+        class="rounded-full bg-white px-6 py-4 shadow-sm ring-1 ring-slate-100"
+      >
+        <nav class="flex items-center justify-between">
+          <a
+            href="#"
+            class="text-4xl font-extrabold leading-none tracking-tight text-slate-900"
+          >
+            Acme<span class="text-indigo-500">.</span>
+          </a>
+
+          <ul
+            class="flex items-center gap-8 text-base font-medium text-slate-900"
+          >
+            <li>
+              <a
+                href="#"
+                class="text-indigo-600 underline underline-offset-4 transition hover:text-[#5E44FF] hover:underline"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="transition hover:text-[#5E44FF] hover:underline"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="transition hover:text-[#5E44FF] hover:underline"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="transition hover:text-[#5E44FF] hover:underline"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="px-4 pb-12 pt-24 text-center md:pb-16 md:pt-28">
+          <div
+            class="mx-auto mb-12 inline-flex items-center gap-2 rounded-full bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-600 ring-1 ring-indigo-100"
+          >
+            <span>🌈</span>
+            <span>Acme Productivity App</span>
+          </div>
+
+          <h1
+            class="mx-auto max-w-5xl text-5xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-8xl"
+          >
+            Boost Your <span class="text-indigo-500">Productivity</span>
+          </h1>
+          <p
+            class="mx-auto mt-5 max-w-3xl text-xl font-semibold text-slate-900 md:text-4xl"
+          >
+            Streamline your workflow with our all-in-one productivity app.
+          </p>
+          <button
+            type="button"
+            class="mt-12 w-[187px] rounded-2xl bg-[#1A1A2C] px-9 py-4 text-lg font-semibold text-white transition hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-2 focus:ring-[#5F5F76]"
+          >
+            Start Free Trial
+          </button>
+        </section>
+
+        <section class="grid grid-cols-1 gap-6 px-4 py-6 md:grid-cols-3">
+          <article class="rounded-3xl bg-blue-50 p-8">
+            <div
+              class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white text-xl"
+            >
+              🚀
+            </div>
+            <h2 class="text-4xl font-extrabold leading-tight text-slate-900">
+              Streamlined Workflows
+            </h2>
+            <p class="mt-4 text-2xl leading-relaxed text-slate-600">
+              Automate repetitive tasks and focus on high-impact work with our
+              powerful productivity features.
+            </p>
+          </article>
+
+          <article class="rounded-3xl bg-indigo-50 p-8">
+            <div
+              class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white text-xl"
+            >
+              📈
+            </div>
+            <h2 class="text-4xl font-extrabold leading-tight text-slate-900">
+              Blazing Fast Performance
+            </h2>
+            <p class="mt-4 text-2xl leading-relaxed text-slate-600">
+              Experience lightning-fast performance and instant responsiveness
+              with our cutting-edge technology.
+            </p>
+          </article>
+
+          <article class="rounded-3xl bg-fuchsia-50 p-8">
+            <div
+              class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white text-xl"
+            >
+              🙂
+            </div>
+            <h2 class="text-4xl font-extrabold leading-tight text-slate-900">
+              Intuitive Interface
+            </h2>
+            <p class="mt-4 text-2xl leading-relaxed text-slate-600">
+              Our user-friendly interface makes it easy for anyone to streamline
+              their workflow.
+            </p>
+          </article>
+        </section>
+
+        <section class="px-4 pb-10 pt-16">
+          <div
+            class="rounded-3xl bg-white px-6 py-12 shadow-sm ring-1 ring-slate-100 md:px-16"
+          >
+            <h2
+              class="text-center text-5xl font-extrabold leading-tight text-[#1A1A2C]"
+            >
+              Get in Touch
+            </h2>
+
+            <form class="mx-auto mt-10 max-w-4xl">
+              <div class="mb-4">
+                <label
+                  for="name"
+                  class="mb-2 block text-sm font-medium text-slate-600"
+                  >Name</label
+                >
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="John Doe"
+                  class="w-full rounded-xl border border-[#E0E0ED] p-3 text-lg text-slate-800 outline-none transition placeholder:text-slate-400 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
+                />
+              </div>
+
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="mb-2 block text-sm font-medium text-slate-600"
+                  >Email</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="john@example.com"
+                  class="w-full rounded-xl border border-[#E0E0ED] p-3 text-lg text-slate-800 outline-none transition placeholder:text-slate-400 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="mb-2 block text-sm font-medium text-slate-600"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="3"
+                  placeholder="Your message..."
+                  class="w-full rounded-xl border border-[#E0E0ED] p-3 text-lg text-slate-800 outline-none transition placeholder:text-slate-400 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="mx-auto block w-[589px] max-w-full rounded-2xl bg-[#1A1A2C] px-9 py-4 text-xl font-semibold text-white transition hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-2 focus:ring-[#5F5F76]"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </section>
+        <!-- input&Footer -->
+      </main>
+
+      <footer
+        class="mt-6 flex flex-col items-center justify-between gap-6 px-4 py-6 text-xl text-slate-600 md:flex-row"
+      >
+        <p>Acme productivity app &copy;2024</p>
+        <ul class="flex items-center gap-10 font-semibold text-slate-900">
+          <li>
+            <a href="#" class="transition hover:text-[#5E44FF] hover:underline"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-[#5E44FF] hover:underline"
+              >Terms</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-[#5E44FF] hover:underline"
+              >AI Policy</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-[#5E44FF] hover:underline"
+              >Pricing</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
